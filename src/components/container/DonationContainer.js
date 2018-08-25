@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import { DonationRecommendationButton } from "../display/DonationRecommendationButton";
 import { DonationCheckbox } from "../display/DonationCheckbox";
-import { DonationTile } from "../display/DonationTile";
+import { Tile } from "../display/Tile";
+import categories from '../../data/categories.json';
 
 export class DonationContainer extends Component {
   constructor() {
     super();
-
     this.state = {
       currentDonation: 50,
       currentCheckbox: "single",
-      currentCategory: "general"
+      currentCategory: "general",
+      categories : categories.categories
     };
   }
 
@@ -30,12 +31,14 @@ export class DonationContainer extends Component {
     });
   }
 
-  setCurrentCategory(category) {
-    this.setState({
-      currentDonation: this.state.currentDonation,
-      currentCheckbox: this.state.currentCheckbox,
-      currentCategory: category
+  setCurrentCategory(categoryId) {
+    let categories = this.state.categories;
+    categories.map((val,key)=>{
+      val.checked = (categoryId == val.id) ? true : false;
     });
+    let currentState = this.state;
+    currentState.categories = categories;
+    this.setState(currentState);
   }
 
   render() {
@@ -110,45 +113,31 @@ export class DonationContainer extends Component {
               this.setCurrentCategory("general");
             }}
           >
-            Dort wo es am nötigsten ist
+            Dort, wo es am nötigsten ist
           </div>
         </div>
-        <DonationTile
-          checked={this.state.currentCategory === "test"}
-          id="test"
-          imgUrl="./src/img/kategorien/fluechtlinge_in_asien_brauchen_hilfe.jpg"
-          setValue={category => {
-            this.setCurrentCategory(category);
-          }}
-          title="Flüchtlinge in Asien brauchen Hilfe."
-        />
-        <DonationTile
-          checked={this.state.currentCategory === "test2"}
-          id="test2"
-          imgUrl="./src/img/kategorien/hilfe_fuer_familien_in_der_schweiz.jpg"
-          setValue={category => {
-            this.setCurrentCategory(category);
-          }}
-          title="Hilfe für Familien in der Schweiz."
-        />
-        <DonationTile
-          checked={this.state.currentCategory === "test2"}
-          id="test2"
-          imgUrl="./src/img/kategorien/hunger_in_afrika.jpg"
-          setValue={category => {
-            this.setCurrentCategory(category);
-          }}
-          title="Afrika hat Hunger."
-        />
-        <DonationTile
-          checked={this.state.currentCategory === "test2"}
-          id="test2"
-          imgUrl="./src/img/kategorien/licht_in_das_leben_der_aermsten_bringen.jpg"
-          setValue={category => {
-            this.setCurrentCategory(category);
-          }}
-          title="Licht in das Leben der Ärmsten bringen."
-        />
+        
+        {
+          this.state.categories.map((val, key) => {
+            
+            return (
+              <Tile
+              data={{
+                text : val.title,
+                image : val.image,
+                small : val.small,
+                wide : val.wide,
+                checked : val.checked,
+                id : val.id,
+                setActive : (id) => {
+                   this.setCurrentCategory(id);
+                }
+              }}
+              />
+            )
+          })
+        }
+
       </div>
     );
   }

@@ -9,24 +9,13 @@ export class ProfileContainer extends Component {
     constructor(){
         super();
         this.state = {
-          data: profileData,
-          page: "profile"
+          data: profileData
         }
-        console.log(this.state);
-        this.handler = this.handler.bind(this)
-    }
-
-    handler(e) {
-      e.preventDefault()
-      this.setState({
-        page: "profile2"
-      })
     }
     
 
     render(){
-      // VIEW: Profile Page (Some Projects, Achievements)
-      if(this.state.page === "profile") {
+
         return (
           <div className="content">
 
@@ -46,12 +35,14 @@ export class ProfileContainer extends Component {
                       ))}
                     </div>
                   </div>
-                  <ProfileButton handler = {this.handler} />
+                  <ProfileButton />
                 </div>
 
           </div>
         );
       }
+<<<<<<< HEAD
+=======
 
       // VIEW: Donation Tracking (Status bars...)
       else if(this.state.page === "profile2") {
@@ -77,4 +68,5 @@ export class ProfileContainer extends Component {
       }
 
     }
+>>>>>>> 9458da6aac13f5a1dde6a64e320485f4666612d5
 }
