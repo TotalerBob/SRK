@@ -5,6 +5,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { NavigationContainer } from "./NavigationContainer";
 import { DashboardContainer } from "./DashboardContainer";
 import { TopBar } from "../display/TopBar";
+import { ProfileContainer } from "./ProfileContainer";
 
 export default class AppContainer extends Component {
   constructor() {
@@ -24,6 +25,7 @@ export default class AppContainer extends Component {
               <Switch location={location}>
                 <Route exact path="/" component={DashboardContainer} />
                 <Route exact path="/donate" component={DonationContainer} />
+                <Route exact path="/profile" component={ProfileContainer} />
               </Switch>
             </CSSTransition>
           </TransitionGroup>
