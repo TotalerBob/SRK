@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { DonationContainer } from "./DonationContainer";
 
 export default class AppContainer extends Component {
     constructor(){
@@ -8,8 +9,7 @@ export default class AppContainer extends Component {
     render(){
         return (
            <div className="container">
-                <div className="content">
-                    
+                <div className="content-container">
                 </div>
                 <div className="navigation">
                     <div className="donate-button"></div>

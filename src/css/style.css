@@ -2,10 +2,9 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: red;
 }
 
-.content {
+.content-container {
     position: absolute;
     width: 100vw;
     height: 90vh;
@@ -13,6 +12,11 @@
     top: 0;
     overflow-y: auto;
     background-color: #AAAAAA;
+}
+
+.content {
+    width: 100vw;
+    background-color: orange;
 }
 
 .navigation {
@@ -33,5 +37,5 @@
     bottom: -12.5vh;
     border-radius: 50%;
     background-color: white;
-    border: 1vh solid red;;
+    border: 1vh solid #e2001e;
 }
