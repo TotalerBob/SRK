@@ -1,0 +1,95 @@
+{
+    "user": "Robert'); DROP TABLE Students;--",
+    "img": "../../img/profile/bobby.png",
+    "influence": [
+      {
+        "projectName": "Projekt 1",
+        "desc": "Beschreibung Projekt 1...",
+        "img": ""
+      },
+      {
+        "projectName": "Projekt 2",
+        "desc": "Beschreibung Projekt 2...",
+        "img": ""
+      },
+      {
+        "projectName": "Projekt 3",
+        "desc": "Beschreibung Projekt 3...",
+        "img": ""
+      },
+      {
+        "projectName": "Projekt 4",
+        "desc": "Beschreibung Projekt 4...",
+        "img": ""
+      },
+      {
+        "projectName": "Projekt 5",
+        "desc": "Beschreibung Projekt 5...",
+        "img": ""
+      }
+    ],
+    "achievements": [
+      {
+        "achievementName": "Platin Spender",
+        "desc": "Hat über 2'500 CHF gespendet"
+      },
+      {
+        "achievementName": "Treuer Spender",
+        "desc": "Hat an 6 aufeinanderfolgenden Monaten Geld gespendet"
+      },
+      {
+        "achievementName": "Weihnachtsfest",
+        "desc": "Hat in der Weihnachtswoche Geld gespendet"
+      }
+    ],
+    "donations": [
+      {
+        "project": "Schule in Namibia",
+        "date": "18.03.2018",
+        "amount": "500",
+        "progress": "66%",
+        "color": "orange",
+        "projectID": "",
+        "cssstyle": {
+          "background-color": "orange",
+          "width": "66%"
+        }
+      },
+      {
+        "project": "Spital in Kenia",
+        "date": "24.04.2018",
+        "amount": "200",
+        "progress": "66%",
+        "color": "orange",
+        "projectID": "",
+        "cssstyle": {
+          "background-color": "orange",
+          "width": "66%"
+        }
+      },
+      {
+        "project": "Brunnen in Somalia",
+        "date": "29.05.2018",
+        "amount": "100",
+        "progress": "100%",
+        "color": "green",
+        "projectID": "",
+        "cssstyle": {
+          "background-color": "green",
+          "width": "100%"
+        }
+      },
+      {
+        "project": "Noch nicht Eingesetzt...",
+        "date": "12.06.2018",
+        "amount": "100",
+        "progress": "33%",
+        "color": "red",
+        "projectID": "",
+        "cssstyle": {
+          "background-color": "red",
+          "width": "33%"
+        }
+      }
+    ]
+}
