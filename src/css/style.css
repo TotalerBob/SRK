@@ -1,3 +1,27 @@
+/**
+ * START GENERAL STYLE ==============================
+ */
+
+/* Import fonts */
+
+@import url("./../fonts/FrutigerBold/stylesheet.css");
+@import url("./../fonts/FrutigerLight/stylesheet.css");
+@import url("./../fonts/FrutigerNormal/stylesheet.css");
+
+.font-light {
+  font-family:'FrutigerL', Arial;
+}
+
+.font-bold {
+  font-family:'FrutigerB', Arial;
+}
+
+/**
+ * END GENERAL STYLE ================================
+ */
+
+
+
 * {
   outline: none;
 }
@@ -127,3 +151,14 @@
   width: 30vw;
   height: 6vh;
 }
+
+
+/**
+ * START DASHBOARD STYLE ==============================
+ */
+
+
+
+/**
+ * END DASHBOARD STYLE ================================
+ */
