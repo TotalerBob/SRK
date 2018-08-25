@@ -3,6 +3,7 @@ import { DonationContainer } from "./DonationContainer";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { NavigationContainer } from "./NavigationContainer";
+import { TopBar } from "../display/TopBar";
 
 export default class AppContainer extends Component {
   constructor() {
@@ -25,6 +26,7 @@ export default class AppContainer extends Component {
             </CSSTransition>
           </TransitionGroup>
         </div>
+        <TopBar />
         <NavigationContainer />
       </div>
     );

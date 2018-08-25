@@ -8,23 +8,37 @@
   height: 100vh;
 }
 
+/* Topbar */
+.topbar {
+  width: 100vw;
+  height: 7vh;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #e2001e;
+  line-height: 7vh;
+  box-shadow: 0px 0px 12px 1px #333333;
+  z-index: 10;
+}
+
+/* Content */
 .content-container {
   position: absolute;
   width: 100vw;
-  height: 90vh;
+  height: 83vh;
   left: 0;
-  top: 0;
+  top: 7vh;
   overflow-y: auto;
-  background-color: #aaaaaa;
 }
 
 .content {
   box-sizing: border-box;
   padding: 2vh;
   width: 100%;
-  background-color: orange;
 }
 
+/* Navigation */
 .navigation {
   position: absolute;
   box-sizing: border-box;
@@ -32,20 +46,39 @@
   height: 10vh;
   left: 0;
   bottom: 0;
-  background-color: #444444;
-  border-top: 1vh solid #333333;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 12px 0px #333333;
 }
 
 .navigation > .donate-button {
   position: absolute;
   box-sizing: border-box;
-  width: 25vh;
-  height: 25vh;
-  left: calc(50vw - 12.5vh);
-  bottom: -12.5vh;
+  width: 15vh;
+  height: 15vh;
+  left: calc(50vw - 7.5vh);
+  bottom: 2.5vh;
   border-radius: 50%;
   background-color: white;
-  border: 1vh solid #e2001e;
+  border: 0.5vh solid #e2001e;
+  box-shadow: 0px 0px 12px 2px #333333;
+}
+
+.navigation .navigation-left {
+  display: inline-block;
+  width: 50vw;
+  height: 10vh;
+  left: 0;
+  bottom: 0;
+}
+
+.navigation .navigation-right {
+  display: inline-block;
+  width: 50vw;
+  height: 10vh;
+  left: 50;
+  bottom: 0;
 }
 
 /* Donate Page */

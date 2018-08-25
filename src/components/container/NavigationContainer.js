@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { DonateButton } from "../display/DonateButton";
 import { Link } from "react-router-dom";
 
 export class NavigationContainer extends Component {
@@ -10,8 +9,13 @@ export class NavigationContainer extends Component {
   render() {
     return (
       <div className="navigation">
-        <DonateButton />
-        <Link to="/">HomePage</Link>
+        <Link to="/donate" className="donate-button" />
+        <Link to="/" className="navigation-left">
+          HomePage
+        </Link>
+        <Link to="/" className="navigation-right">
+          Irgendwohin
+        </Link>
       </div>
     );
   }
