@@ -16,6 +16,13 @@
   font-family: "FrutigerB", Arial;
 }
 
+body, div, p {
+  font-family:'FrutigerN';
+}
+
+body {
+  font-size:16px;
+}
 /**
  * END GENERAL STYLE ================================
  */
@@ -156,6 +163,19 @@
  * START DASHBOARD STYLE ==============================
  */
 
+<<<<<<< HEAD
+=======
+.dashboard-wrapper {
+
+}
+
+.dashboard-wrapper .row {
+
+
+}
+
+
+>>>>>>> 577c5f2efaf834fb6d689d21ca97dd4034a22376
 /**
  * END DASHBOARD STYLE ================================
  */
