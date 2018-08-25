@@ -27,15 +27,8 @@ module.exports = {
         loader: "file-loader"
       },
       {
-        test: /\.ttf$/,
-        use: [
-          {
-            loader: "ttf-loader",
-            options: {
-              name: "./font/[hash].[ext]"
-            }
-          }
-        ]
+        test: /\.(ttf)$/,
+        loader: "url-loader?limit=100000"
       }
     ]
   },
