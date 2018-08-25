@@ -3,6 +3,7 @@ import { DonationContainer } from "./DonationContainer";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { NavigationContainer } from "./NavigationContainer";
+import { DashboardContainer } from "./DashboardContainer";
 import { TopBar } from "../display/TopBar";
 
 export default class AppContainer extends Component {
@@ -21,6 +22,7 @@ export default class AppContainer extends Component {
               classNames="fade"
             >
               <Switch location={location}>
+                <Route path="/" component={DashboardContainer} />
                 <Route path="/donate" component={DonationContainer} />
               </Switch>
             </CSSTransition>
