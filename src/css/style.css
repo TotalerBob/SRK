@@ -51,7 +51,7 @@ body {
   line-height: 7vh;
   box-shadow: 0px 0px 12px 1px #333333;
   z-index: 10;
-  position:fixed;
+  position: fixed;
   background-image: url("../img/logo/logo.png");
   background-size: 45%;
   background-repeat: no-repeat;
@@ -205,101 +205,136 @@ body {
   line-height: 6vh;
 }
 
+.donation-divider {
+  margin-top: 2vh;
+  font-size: 4vmin;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+.donation-option-featured {
+  box-sizing: border-box;
+  margin-top: 2vh;
+  width: 100%;
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #e2001e;
+  border: 0.5vh solid #d1000d;
+  margin-bottom: 1vh;
+}
+
+.donation-option {
+  box-sizing: border-box;
+  width: 50%;
+  height: 18vh;
+  background-size: cover;
+  color: white;
+  padding: 1vmin;
+  padding-top: 14vh;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: inset 0px -40px 40px rgba(0, 0, 0, 0.85);
+  font-size: 3.5vmin;
+  float: right;
+}
+
 /**
  * START DASHBOARD STYLE ==============================
  */
 .dashboard-wrapper {
-  padding-bottom:30px;
+  padding-bottom: 30px;
 }
 
 .dashboard-wrapper .row {
-
 }
 
 .dashboard-wrapper .row-title {
-  font-size:20px;
-  padding-top:30px;
-  padding-left:30px;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
 }
 .dashboard-wrapper .row-wrapper {
-  width:100%;
-  overflow-x:scroll;
+  width: 100%;
+  overflow-x: scroll;
 }
 .dashboard-wrapper .row-scroller {
-  padding:30px;
-  padding-top:20px;
-  padding-bottom:0px;
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
 
 .dashboard-wrapper .row-scroller .tile-lg {
-  height:200px;
-  width:300px;
-  float:left;
-  margin-right:5px;
+  height: 200px;
+  width: 300px;
+  float: left;
+  margin-right: 5px;
   background-size: cover;
-  position:relative;
-  box-shadow:inset 0px -50px 50px rgba(0,0,0,.85);
+  position: relative;
+  box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
 }
 .dashboard-wrapper .row-scroller .tile {
-  height:140px;
-  width:220px;
-  float:left;
-  margin-right:5px;
+  height: 140px;
+  width: 220px;
+  float: left;
+  margin-right: 5px;
   background-size: cover;
-  position:relative;
-  box-shadow:inset 0px -30px 30px rgba(0,0,0,.85);
+  position: relative;
+  box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
 }
 .dashboard-wrapper .row-scroller .tile-tag {
-  background:url(./../img/bar.png);
-  width:95px;
-  height:53px;
-  position:absolute;
-  font-size:14px;
+  background: url(./../img/bar.png);
+  width: 95px;
+  height: 53px;
+  position: absolute;
+  font-size: 14px;
   text-transform: uppercase;
   box-sizing: border-box;
-  text-align:right;
-  padding-right:13px;
-  padding-top:16px;
-  right:0px;
-  top:80px;
-  font-style:italic;
+  text-align: right;
+  padding-right: 13px;
+  padding-top: 16px;
+  right: 0px;
+  top: 80px;
+  font-style: italic;
 }
 .dashboard-wrapper .row-scroller .tile-tag-live {
-  position:absolute;
-  right:15px;
-  bottom:15px;
-  color:rgb(255,0,29);
-  padding-left:17px;
-  font-size:12px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  color: rgb(255, 0, 29);
+  padding-left: 17px;
+  font-size: 12px;
   line-height: 14px;
   font-style: italic;
 }
 .dashboard-wrapper .row-scroller .tile-heart {
-  height:27px;
-  width:29px;
-  background:url(./../img/heart.png);
-  position:absolute;
-  right:10px;
-  top:10px;
+  height: 27px;
+  width: 29px;
+  background: url(./../img/heart.png);
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 .dashboard-wrapper .row-scroller .tile-tag-live .dot {
-  position:absolute;
-  height:12px;
-  width:12px;
-  border-radius:10px;
-  background:rgb(255,0,29);
-  left:0;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 10px;
+  background: rgb(255, 0, 29);
+  left: 0;
 }
 .dashboard-wrapper .row-scroller .tile-text {
-  color:white;
-  position:absolute;
-  bottom:15px;
-  left:15px;
-  right:15px;
-  font-size:14px;
-  line-height:1.4em;
-  width:75%;
-  text-shadow:0px 0px 5px rgba(0,0,0,0.85);
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  font-size: 14px;
+  line-height: 1.4em;
+  width: 75%;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
 }
 
 .dashboard-wrapper .row {
@@ -307,8 +342,6 @@ body {
 /**
  * END DASHBOARD STYLE ================================
  */
-
-
 
 /* PROFILE SECTION */
 .profile-header {
@@ -352,7 +385,7 @@ body {
 .myDonation-button {
   margin: auto;
   width: 40%;
-  background-color: #4CAF50; /* Green */
+  background-color: #4caf50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
