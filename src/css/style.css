@@ -8,6 +8,12 @@
 @import url("./../fonts/FrutigerLight/stylesheet.css");
 @import url("./../fonts/FrutigerNormal/stylesheet.css");
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
 .font-light {
   font-family: "FrutigerL", Arial;
 }
@@ -25,6 +31,8 @@ p {
 body {
   font-size: 16px;
 }
+
+h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; margin-bottom: 20px;}
 /**
  * END GENERAL STYLE ================================
  */
@@ -42,18 +50,19 @@ body {
 /* Topbar */
 .topbar {
   width: 100vw;
-  height: 7vh;
+  height: 60px;
   top: 0;
   left: 0;
   text-align: center;
   font-size: 1.5rem;
+  background:white;
   color: #e2001e;
   line-height: 7vh;
-  box-shadow: 0px 0px 12px 1px #333333;
+  box-shadow: 0px 0px 12px 1px #33333330;
   z-index: 10;
-  position:fixed;
+  position: fixed;
   background-image: url("../img/logo/logo.png");
-  background-size: 45%;
+  background-size: 180px;
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -64,14 +73,19 @@ body {
   width: 100vw;
   height: 83vh;
   left: 0;
-  top: 7vh;
+  top: 60px;
   overflow-y: auto;
+  margin-bottom: 120px;
 }
 
 .content {
   box-sizing: border-box;
-  padding: 2vh;
   width: 100%;
+}
+
+.indent-container {
+  padding-left:30px;
+  padding-right:30px;
 }
 
 /* Navigation */
@@ -79,40 +93,39 @@ body {
   position: fixed;
   box-sizing: border-box;
   width: 100vw;
-  height: 10vh;
+  height: 60px;
   left: 0;
   bottom: 0;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  box-shadow: 0px 0px 12px 0px #333333;
+  box-shadow: 0px 0px 12px 0px #33333342;
 }
 
-.navigation-active {
-  background-color: #cccccc;
-}
+
 
 .navigation > .donate-button {
   position: absolute;
   box-sizing: border-box;
-  width: 15vh;
-  height: 15vh;
-  left: calc(50vw - 7.5vh);
-  bottom: 2.5vh;
+  width: 100px;
+  height: 100px;
+  left: calc(50vw - 50px);
+  bottom: 20px;
   border-radius: 50%;
   background-color: white;
-  border: 0.5vh solid #e2001e;
-  box-shadow: 0px 0px 12px 2px #333333;
+  /*border: 0.5vh solid #e2001e;*/
+  box-shadow: 0px 2px 13px 2px #3333333d;
   z-index: 10;
   background-image: url("../img/logo/rotes_kreuz.svg");
-  background-size: 35%;
+  background-size: 29px;
   background-repeat: no-repeat;
-  background-position: 50% 22%;
+  background-position: 50% 32%;
   text-align: center;
-  padding-top: 8vh;
+  padding-top: 62px;
   text-decoration: none;
-  font-family: "FrutigerB";
-  font-size: 4vmin;
+  font-family: "FrutigerN";
+  text-transform: uppercase;
+  font-size: 14px;
   color: #e2001e;
   font-weight: bold;
 }
@@ -121,157 +134,242 @@ body {
   box-sizing: border-box;
   display: inline-block;
   width: 50vw;
-  height: 10vh;
+  height: 100%;
   left: 0;
   bottom: 0;
   background-image: url("../icons/view_module.svg");
-  background-position: 43% 5%;
-  background-size: 25%;
+  background-position-x: calc(50%);
+  background-position-y: 3px;
+  background-size: 40px;
   background-repeat: no-repeat;
-  filter: opacity(50%);
-  padding-top: 6.2vh;
-  padding-right: 5vw;
-  font-size: 3.5vmin;
+  font-size: 14px;
+  opacity:0.35!important;
   text-align: center;
   text-decoration: none;
   color: black;
   font-weight: bolder;
   text-transform: uppercase;
   overflow: hidden;
+  padding-top:40px;
 }
 
 .navigation .navigation-right {
   box-sizing: border-box;
   display: inline-block;
   width: 50vw;
-  height: 10vh;
+  height: 100%;
   left: 50vw;
   bottom: 0;
   background-image: url("../icons/person.svg");
   background-position: 55% 10%;
-  background-size: 20%;
+  background-position-x: calc(50%);
+  background-position-y: 3px;
+  background-size: 35px;
   background-repeat: no-repeat;
-  filter: opacity(50%);
-  padding-top: 6vh;
-  padding-left: 5vw;
-  font-size: 3.5vmin;
+  font-size: 14px;
+  opacity:0.35!important;
   text-align: center;
   text-decoration: none;
   color: black;
   font-weight: bolder;
   text-transform: uppercase;
   overflow: hidden;
+  padding-top:40px;
 }
+
+.navigation-left.navigation-active {  opacity:0.75!important; }
+.navigation-right.navigation-active {  opacity:0.75!important; }
+
 
 /* Donate Page */
-.donate-page .payment-settings #donation-amount {
-  width: 100%;
-  height: 6vh;
-  text-align: center;
-  font-size: 4rem;
-  font-weight: bold;
+.donate-page {
+  margin-top:30px;
 }
 
-.donate-page .payment-settings .donation-recommendations-button {
-  width: 30vw;
+
+.donate-page .payment-settings #donation-amount {
+  box-sizing: border-box;
+  width: auto;
   height: 6vh;
+  text-align: center;
+  font-size: 15px;
+  margin: 0 auto;
+  display: flex;
+  padding: 20px 5px;
+  margin-bottom: 10px;
+}
+
+.donation-recommendations-button {
+  margin: 0;
+  padding: 0;
+  width: 33.333%;
+  height: 6vh;
+  background-color: #e2001e;
+  color: white;
+  box-shadow: 0 0 0 0 #000000;
+  border: none;
+  font-style: "FrutigerB", Arial;
+}
+
+.donation-recommendations-button:active {
+  background-color: #d1000d;
+}
+
+.donation-recommendations-button:first-of-type {
+  border-right: 1px solid white;
+}
+
+.donation-recommendations-button:last-of-type {
+  border-left: 1px solid white;
+}
+
+.donation-interval {
+  width: 33.333%;
+  height: 6vh;
+  display: inline-block;
+  text-align: center;
+  line-height: 6vh;
+}
+
+.donation-divider {
+  margin-top: 2vh;
+  font-size: 4vmin;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+.donation-option-featured {
+  box-sizing: border-box;
+  margin-top: 2vh;
+  width: 100%;
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #e2001e;
+  border: 0.5vh solid #d1000d;
+  margin-bottom: 1vh;
+}
+
+.donation-option {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 200px;
+  width: 300px;
+  padding: 0;
+  display: inline-block;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+}
+
+.donation-option .tile-text {
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  font-size: 14px;
+  line-height: 1.4em;
+  width: 75%;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.85);
 }
 
 /**
  * START DASHBOARD STYLE ==============================
  */
 .dashboard-wrapper {
-  padding-bottom:30px;
+  padding-bottom: 30px;
 }
 
 .dashboard-wrapper .row {
-
 }
 
 .dashboard-wrapper .row-title {
-  font-size:20px;
-  padding-top:30px;
-  padding-left:30px;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
 }
 .dashboard-wrapper .row-wrapper {
-  width:100%;
-  overflow-x:scroll;
+  width: 100%;
+  overflow-x: scroll;
 }
 .dashboard-wrapper .row-scroller {
-  padding:30px;
-  padding-top:20px;
-  padding-bottom:0px;
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
 
 .dashboard-wrapper .row-scroller .tile-lg {
-  height:200px;
-  width:300px;
-  float:left;
-  margin-right:5px;
+  height: 200px;
+  width: 300px;
+  float: left;
+  margin-right: 5px;
   background-size: cover;
-  position:relative;
-  box-shadow:inset 0px -50px 50px rgba(0,0,0,.85);
+  position: relative;
+  box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
 }
 .dashboard-wrapper .row-scroller .tile {
-  height:140px;
-  width:220px;
-  float:left;
-  margin-right:5px;
+  height: 140px;
+  width: 220px;
+  float: left;
+  margin-right: 5px;
   background-size: cover;
-  position:relative;
-  box-shadow:inset 0px -30px 30px rgba(0,0,0,.85);
+  position: relative;
+  box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
 }
 .dashboard-wrapper .row-scroller .tile-tag {
-  background:url(./../img/bar.png);
-  width:95px;
-  height:53px;
-  position:absolute;
-  font-size:14px;
+  background: url(./../img/bar.png);
+  width: 95px;
+  height: 53px;
+  position: absolute;
+  font-size: 14px;
   text-transform: uppercase;
   box-sizing: border-box;
-  text-align:right;
-  padding-right:13px;
-  padding-top:16px;
-  right:0px;
-  top:80px;
-  font-style:italic;
+  text-align: right;
+  padding-right: 13px;
+  padding-top: 16px;
+  right: 0px;
+  top: 80px;
+  font-style: italic;
 }
 .dashboard-wrapper .row-scroller .tile-tag-live {
-  position:absolute;
-  right:15px;
-  bottom:15px;
-  color:rgb(255,0,29);
-  padding-left:17px;
-  font-size:12px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  color: rgb(255, 0, 29);
+  padding-left: 17px;
+  font-size: 12px;
   line-height: 14px;
   font-style: italic;
 }
 .dashboard-wrapper .row-scroller .tile-heart {
-  height:27px;
-  width:29px;
-  background:url(./../img/heart.png);
-  position:absolute;
-  right:10px;
-  top:10px;
+  height: 27px;
+  width: 29px;
+  background: url(./../img/heart.png);
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 .dashboard-wrapper .row-scroller .tile-tag-live .dot {
-  position:absolute;
-  height:12px;
-  width:12px;
-  border-radius:10px;
-  background:rgb(255,0,29);
-  left:0;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 10px;
+  background: rgb(255, 0, 29);
+  left: 0;
 }
 .dashboard-wrapper .row-scroller .tile-text {
-  color:white;
-  position:absolute;
-  bottom:15px;
-  left:15px;
-  right:15px;
-  font-size:14px;
-  line-height:1.4em;
-  width:75%;
-  text-shadow:0px 0px 5px rgba(0,0,0,0.85);
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  font-size: 14px;
+  line-height: 1.4em;
+  width: 75%;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
 }
 
 .dashboard-wrapper .row {
@@ -280,26 +378,27 @@ body {
  * END DASHBOARD STYLE ================================
  */
 
-
-
 /* PROFILE SECTION */
 .profile-header {
-  padding: 15px;
-  height: 20vh;
-  width: 100vw;
-  background-color: red;
+  height: 200px;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 20px;
 }
 
 .profile-name {
   padding-top: 20px;
-  font-size: 25px;
-  color: white;
+  font-size: 22px;
+  color: black;
 }
 
-.profile-picture {
-  margin: auto;
+.profile-picture img {
+  margin: 0;
   height: 100px;
   width: 100px;
   background-color: #bbb;
@@ -307,31 +406,47 @@ body {
 }
 
 .profile-scrollmenu {
-  overflow: auto;
+  overflow: hidden;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+.profile-scrollmenu .profile-inner-scroll {
   white-space: nowrap;
+  display: flex;
+  flex-flow: wrap;
+  width: 1800px;
 }
 
 .profile-card {
-  margin: 10px;
-  width: 33vw;
-  height: 20vh;
-  border: 1px solid black;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-right: 10px;
+  height: 200px;
+  width: 300px;
+  padding:0;
   display: inline-block;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+}
+
+.profile-card .text{
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  font-size: 14px;
+  line-height: 1.4em;
+  width: 75%;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.85);
 }
 
 .myDonation-button {
-  margin: auto;
-  width: 40%;
-  background-color: #4CAF50; /* Green */
+  background-color: #e2001a;
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: "FrutigerB";
 }
 
 .profile-progress-card {
