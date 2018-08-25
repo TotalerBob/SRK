@@ -71,6 +71,11 @@
   height: 10vh;
   left: 0;
   bottom: 0;
+  background-image: url("../icons/view_module.svg");
+  background-position: 30%;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  filter: opacity(50%);
 }
 
 .navigation .navigation-right {
@@ -79,6 +84,11 @@
   height: 10vh;
   left: 50;
   bottom: 0;
+  background-image: url("../icons/person.svg");
+  background-position: 70%;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  filter: opacity(50%);
 }
 
 /* Donate Page */

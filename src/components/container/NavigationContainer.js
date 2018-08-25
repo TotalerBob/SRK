@@ -10,12 +10,8 @@ export class NavigationContainer extends Component {
     return (
       <div className="navigation">
         <Link to="/donate" className="donate-button" />
-        <Link to="/" className="navigation-left">
-          HomePage
-        </Link>
-        <Link to="/" className="navigation-right">
-          Irgendwohin
-        </Link>
+        <Link to="/explore" className="navigation-left" />
+        <Link to="/profile" className="navigation-right" />
       </div>
     );
   }
