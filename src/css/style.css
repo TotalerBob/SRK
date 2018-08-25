@@ -9,18 +9,16 @@
 @import url("./../fonts/FrutigerNormal/stylesheet.css");
 
 .font-light {
-  font-family:'FrutigerL', Arial;
+  font-family: "FrutigerL", Arial;
 }
 
 .font-bold {
-  font-family:'FrutigerB', Arial;
+  font-family: "FrutigerB", Arial;
 }
 
 /**
  * END GENERAL STYLE ================================
  */
-
-
 
 * {
   outline: none;
@@ -102,13 +100,14 @@
   left: 0;
   bottom: 0;
   background-image: url("../icons/view_module.svg");
-  background-position: 30% 5%;
+  background-position: 43% 5%;
   background-size: 25%;
   background-repeat: no-repeat;
   filter: opacity(50%);
   padding-top: 6.2vh;
-  padding-left: 4vw;
-  font-size: 2.2rem;
+  padding-right: 5vw;
+  font-size: 3.5vmin;
+  text-align: center;
   text-decoration: none;
   color: black;
   font-weight: bolder;
@@ -124,13 +123,14 @@
   left: 50vw;
   bottom: 0;
   background-image: url("../icons/person.svg");
-  background-position: 65% 10%;
+  background-position: 55% 10%;
   background-size: 20%;
   background-repeat: no-repeat;
   filter: opacity(50%);
   padding-top: 6vh;
-  padding-left: 22vw;
-  font-size: 2.2rem;
+  padding-left: 5vw;
+  font-size: 3.5vmin;
+  text-align: center;
   text-decoration: none;
   color: black;
   font-weight: bolder;
@@ -152,12 +152,9 @@
   height: 6vh;
 }
 
-
 /**
  * START DASHBOARD STYLE ==============================
  */
-
-
 
 /**
  * END DASHBOARD STYLE ================================
