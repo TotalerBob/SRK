@@ -13,7 +13,9 @@ export class NavigationContainer extends Component {
           to="/donate"
           activeClassName="navigation-active"
           className="donate-button"
-        />
+        >
+          Spenden
+        </NavLink>
         <NavLink
           to="/explore"
           className="navigation-left"
