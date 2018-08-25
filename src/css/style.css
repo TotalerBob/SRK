@@ -59,6 +59,10 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   color: #e2001e;
   line-height: 7vh;
   box-shadow: 0px 0px 12px 1px #33333330;
+  -webkit-box-shadow: 0px 0px 12px 1px #33333330;
+  -moz-box-shadow: 0px 0px 12px 1px #33333330;
+  -ms-box-shadow: 0px 0px 12px 1px #33333330;
+  -o-box-shadow: 0px 0px 12px 1px #33333330;
   z-index: 10;
   position: fixed;
   background-image: url("../img/logo/logo.png");
@@ -74,7 +78,6 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   height: 83vh;
   left: 0;
   top: 60px;
-  overflow-y: auto;
   margin-bottom: 120px;
 }
 
@@ -100,6 +103,10 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   padding: 0;
   background-color: #ffffff;
   box-shadow: 0px 0px 12px 0px #33333342;
+  -webkit-box-shadow: 0px 0px 12px 0px #33333342;
+  -moz-box-shadow: 0px 0px 12px 0px #33333342;
+  -ms-box-shadow: 0px 0px 12px 0px #33333342;
+  -o-box-shadow: 0px 0px 12px 0px #33333342;
 }
 
 
@@ -115,6 +122,10 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   background-color: white;
   /*border: 0.5vh solid #e2001e;*/
   box-shadow: 0px 2px 13px 2px #3333333d;
+  -webkit-box-shadow: 0px 2px 13px 2px #3333333d;
+  -moz-box-shadow: 0px 2px 13px 2px #3333333d;
+  -ms-box-shadow: 0px 2px 13px 2px #3333333d;
+  -o-box-shadow: 0px 2px 13px 2px #3333333d;
   z-index: 10;
   background-image: url("../img/logo/rotes_kreuz.svg");
   background-size: 29px;
@@ -207,6 +218,10 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   background-color: #e2001e;
   color: white;
   box-shadow: 0 0 0 0 #000000;
+  -webkit-box-shadow: 0 0 0 0 #000000;
+  -moz-box-shadow: 0 0 0 0 #000000;
+  -ms-box-shadow: 0 0 0 0 #000000;
+  -o-box-shadow: 0 0 0 0 #000000;
   border: none;
   font-style: "FrutigerB", Arial;
 }
@@ -262,6 +277,10 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   background-size: cover;
   position: relative;
   box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+  -webkit-box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+  -moz-box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+  -ms-box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+  -o-box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
 }
 
 .donation-option .tile-text {
@@ -310,6 +329,10 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   background-size: cover;
   position: relative;
   box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+  -ms-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+  -o-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
 }
 .dashboard-wrapper .row-scroller .tile {
   height: 140px;
@@ -319,6 +342,10 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   background-size: cover;
   position: relative;
   box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
+  -ms-box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
+  -o-box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
 }
 .dashboard-wrapper .row-scroller .tile-tag {
   background: url(./../img/bar.png);
@@ -427,6 +454,10 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   background-size: cover;
   position: relative;
   box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+  -webkit-box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+  -moz-box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+  -ms-box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+  -o-box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
 }
 
 .profile-card .text{
