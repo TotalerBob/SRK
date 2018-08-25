@@ -25,6 +25,17 @@ module.exports = {
       {
         test: /\.(png|jp(e*)g|svg)$/,
         loader: "file-loader"
+      },
+      {
+        test: /\.ttf$/,
+        use: [
+          {
+            loader: "ttf-loader",
+            options: {
+              name: "./font/[hash].[ext]"
+            }
+          }
+        ]
       }
     ]
   },
