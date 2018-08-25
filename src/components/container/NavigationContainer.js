@@ -17,7 +17,8 @@ export class NavigationContainer extends Component {
           Spenden
         </NavLink>
         <NavLink
-          to="/"
+          to="/" 
+          exact
           className="navigation-left"
           activeClassName="navigation-active"
         >
@@ -25,6 +26,7 @@ export class NavigationContainer extends Component {
         </NavLink>
         <NavLink
           to="/profile"
+          exact
           className="navigation-right"
           activeClassName="navigation-active"
         >
