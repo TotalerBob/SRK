@@ -8,6 +8,12 @@
 @import url("./../fonts/FrutigerLight/stylesheet.css");
 @import url("./../fonts/FrutigerNormal/stylesheet.css");
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
 .font-light {
   font-family: "FrutigerL", Arial;
 }
@@ -42,18 +48,19 @@ body {
 /* Topbar */
 .topbar {
   width: 100vw;
-  height: 7vh;
+  height: 60px;
   top: 0;
   left: 0;
   text-align: center;
   font-size: 1.5rem;
+  background:white;
   color: #e2001e;
   line-height: 7vh;
-  box-shadow: 0px 0px 12px 1px #333333;
+  box-shadow: 0px 0px 12px 1px #33333330;
   z-index: 10;
   position: fixed;
   background-image: url("../img/logo/logo.png");
-  background-size: 45%;
+  background-size: 180px;
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -64,13 +71,12 @@ body {
   width: 100vw;
   height: 83vh;
   left: 0;
-  top: 7vh;
+  top: 60px;
   overflow-y: auto;
 }
 
 .content {
   box-sizing: border-box;
-  padding: 2vh;
   width: 100%;
 }
 
@@ -79,40 +85,39 @@ body {
   position: fixed;
   box-sizing: border-box;
   width: 100vw;
-  height: 10vh;
+  height: 60px;
   left: 0;
   bottom: 0;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  box-shadow: 0px 0px 12px 0px #333333;
+  box-shadow: 0px 0px 12px 0px #33333342;
 }
 
-.navigation-active {
-  background-color: #cccccc;
-}
+
 
 .navigation > .donate-button {
   position: absolute;
   box-sizing: border-box;
-  width: 15vh;
-  height: 15vh;
-  left: calc(50vw - 7.5vh);
-  bottom: 2.5vh;
+  width: 100px;
+  height: 100px;
+  left: calc(50vw - 50px);
+  bottom: 20px;
   border-radius: 50%;
   background-color: white;
-  border: 0.5vh solid #e2001e;
-  box-shadow: 0px 0px 12px 2px #333333;
+  /*border: 0.5vh solid #e2001e;*/
+  box-shadow: 0px 2px 13px 2px #3333333d;
   z-index: 10;
   background-image: url("../img/logo/rotes_kreuz.svg");
-  background-size: 35%;
+  background-size: 29px;
   background-repeat: no-repeat;
-  background-position: 50% 22%;
+  background-position: 50% 32%;
   text-align: center;
-  padding-top: 8vh;
+  padding-top: 62px;
   text-decoration: none;
-  font-family: "FrutigerB";
-  font-size: 4vmin;
+  font-family: "FrutigerN";
+  text-transform: uppercase;
+  font-size: 14px;
   color: #e2001e;
   font-weight: bold;
 }
@@ -121,47 +126,52 @@ body {
   box-sizing: border-box;
   display: inline-block;
   width: 50vw;
-  height: 10vh;
+  height: 100%;
   left: 0;
   bottom: 0;
   background-image: url("../icons/view_module.svg");
-  background-position: 43% 5%;
-  background-size: 25%;
+  background-position-x: calc(50%);
+  background-position-y: 3px;
+  background-size: 40px;
   background-repeat: no-repeat;
-  filter: opacity(50%);
-  padding-top: 6.2vh;
-  padding-right: 5vw;
-  font-size: 3.5vmin;
+  font-size: 14px;
+  opacity:0.35!important;
   text-align: center;
   text-decoration: none;
   color: black;
   font-weight: bolder;
   text-transform: uppercase;
   overflow: hidden;
+  padding-top:40px;
 }
 
 .navigation .navigation-right {
   box-sizing: border-box;
   display: inline-block;
   width: 50vw;
-  height: 10vh;
+  height: 100%;
   left: 50vw;
   bottom: 0;
   background-image: url("../icons/person.svg");
   background-position: 55% 10%;
-  background-size: 20%;
+  background-position-x: calc(50%);
+  background-position-y: 3px;
+  background-size: 35px;
   background-repeat: no-repeat;
-  filter: opacity(50%);
-  padding-top: 6vh;
-  padding-left: 5vw;
-  font-size: 3.5vmin;
+  font-size: 14px;
+  opacity:0.35!important;
   text-align: center;
   text-decoration: none;
   color: black;
   font-weight: bolder;
   text-transform: uppercase;
   overflow: hidden;
+  padding-top:40px;
 }
+
+.navigation-left.navigation-active {  opacity:0.75!important; }
+.navigation-right.navigation-active {  opacity:0.75!important; }
+
 
 /* Donate Page */
 .donate-page .payment-settings #donation-amount {
@@ -345,22 +355,24 @@ body {
 
 /* PROFILE SECTION */
 .profile-header {
-  padding: 15px;
-  height: 20vh;
+  height: 200px;
   width: 100vw;
-  background-color: red;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
 }
 
 .profile-name {
   padding-top: 20px;
-  font-size: 25px;
-  color: white;
+  font-size: 22px;
+  color: black;
 }
 
-.profile-picture {
-  margin: auto;
+.profile-picture img {
+  margin: 0;
   height: 100px;
   width: 100px;
   background-color: #bbb;
