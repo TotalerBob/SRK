@@ -324,7 +324,6 @@ body {
 .profile-header {
   height: 200px;
   width: 100vw;
-  background-color: red;
   text-align: center;
   color: white;
   display: flex;
@@ -339,7 +338,7 @@ body {
   color: black;
 }
 
-.profile-picture {
+.profile-picture img {
   margin: 0;
   height: 100px;
   width: 100px;

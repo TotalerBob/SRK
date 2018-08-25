@@ -28,27 +28,28 @@ export class ProfileContainer extends Component {
       // VIEW: Profile Page (Some Projects, Achievements)
       if(this.state.page === "profile") {
         return (
-            <div className="content">
-             <div className="ttt-temp">
+          <div className="content">
+            <div className="ttt-temp">
 
-                 <div className="profile-header">
-                   <div className="profile-picture"></div>
-                   <div className="profile-name">{this.state.data.user}</div>
-                 </div>
+                <div className="profile-header">
+                  <div className="profile-picture">
+                    <img src="src/img/bobby_avatar.png" alt="Bobby Avatar"/>
+                  </div>
+                  <div className="profile-name">{this.state.data.user}</div>
+                </div>
 
-                 <div className="profile-scrollmenu">
+                <div className="profile-scrollmenu">
 
-                   {this.state.data.influence.map(item => (
-                     <ProfileImpact items={item} />
-                   ))}
+                  {this.state.data.influence.map(item => (
+                    <ProfileImpact items={item} />
+                  ))}
 
-                 </div>
+                </div>
 
-                 <ProfileButton handler = {this.handler} />
+                <ProfileButton handler = {this.handler} />
 
-             </div>
             </div>
-
+          </div>
         );
       }
 
