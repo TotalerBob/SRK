@@ -51,6 +51,10 @@ body {
   line-height: 7vh;
   box-shadow: 0px 0px 12px 1px #333333;
   z-index: 10;
+  background-image: url("../img/logo/logo.png");
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 /* Content */
@@ -99,6 +103,17 @@ body {
   border: 0.5vh solid #e2001e;
   box-shadow: 0px 0px 12px 2px #333333;
   z-index: 10;
+  background-image: url("../img/logo/rotes_kreuz.svg");
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: 50% 22%;
+  text-align: center;
+  padding-top: 8vh;
+  text-decoration: none;
+  font-family: "FrutigerB";
+  font-size: 4vmin;
+  color: #e2001e;
+  font-weight: bold;
 }
 
 .navigation .navigation-left {

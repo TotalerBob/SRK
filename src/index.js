@@ -1,6 +1,8 @@
+/* Icons */
 require("./icons/person.svg");
 require("./icons/view_module.svg");
 
+/* Styles */
 require("./css/reset.css");
 require("./css/style.css");
 

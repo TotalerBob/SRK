@@ -1,5 +1,3 @@
 import React from "react";
 
-export const TopBar = ({ onClick }) => (
-  <div className="topbar">Schweizerisches rotes Kreuz</div>
-);
+export const TopBar = () => <div className="topbar" />;
