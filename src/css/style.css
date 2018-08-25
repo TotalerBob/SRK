@@ -371,3 +371,84 @@ body {
   height: 100%;
   background-color: red;
 }
+
+/* CATEGORY */
+.category-header {
+  height: 200px;
+}
+
+.category-opacity {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgba(0,0,0,0)),
+        color-stop(1, rgba(0,0,0,0))
+    );
+    background-image: -o-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    background-image: -moz-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    background-image: -webkit-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    background-image: -ms-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    background-image: linear-gradient(to top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    height:100%;
+    position:relative;
+    width:100%;
+}
+
+.category-title {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  bottom: 0;
+  position: absolute;
+}
+
+.category-subtitle {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  color: red;
+}
+
+.category-text {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  color: black;
+}
+
+.stories-date {
+  font-size: 11px;
+  padding-top: 7px;
+  padding-right: 7px;
+  color: grey;
+  text-align: right;
+}
+
+.stories-images {
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.project-container {
+  width: 90%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.project-left {
+  font-size: 12px;
+  line-height: 1.5;
+  width: 35%;
+  display: inline-block;
+}
+
+.project-right {
+  font-size: 12px;
+  line-height: 1.5;
+  width: 65%;
+  display: inline-block;
+}
