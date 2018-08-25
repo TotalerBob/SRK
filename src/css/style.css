@@ -279,3 +279,95 @@ body {
 /**
  * END DASHBOARD STYLE ================================
  */
+
+
+
+/* PROFILE SECTION */
+.profile-header {
+  padding: 15px;
+  height: 20vh;
+  width: 100vw;
+  background-color: red;
+  text-align: center;
+  color: white;
+}
+
+.profile-name {
+  padding-top: 20px;
+  font-size: 25px;
+  color: white;
+}
+
+.profile-picture {
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+.profile-scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.profile-card {
+  margin: 10px;
+  width: 33vw;
+  height: 20vh;
+  border: 1px solid black;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: inline-block;
+}
+
+.myDonation-button {
+  margin: auto;
+  width: 40%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.profile-progress-card {
+  box-sizing: content-box;
+  border: 1px solid black;
+  width: 90vw;
+  height: 20vh;
+  margin: auto;
+  margin: 15px;
+  padding: 10px;
+}
+
+.profile-progress-title {
+  font-size: 22px;
+  width: 70vw;
+  text-align: left;
+  display: inline-block;
+}
+
+.profile-progress-amount {
+  font-size: 22px;
+  text-align: right;
+  display: inline-block;
+}
+
+.profile-progress {
+  width: 90vw;
+  height: 20px;
+  border: 1px solid black;
+  padding: 0px;
+  margin: 0px;
+}
+
+.profile-progress-fill {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  background-color: red;
+}
