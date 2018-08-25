@@ -18,7 +18,6 @@ export class ProfileContainer extends Component {
 
         return (
           <div className="content">
-            <div className="ttt-temp">
 
                 <div className="profile-header">
                   <div className="profile-picture">
@@ -39,8 +38,32 @@ export class ProfileContainer extends Component {
                   <ProfileButton />
                 </div>
 
-            </div>
           </div>
         );
       }
+<<<<<<< HEAD
+=======
+
+      // VIEW: Donation Tracking (Status bars...)
+      else if(this.state.page === "profile2") {
+        return (
+        <div className="content">
+
+                <div className="profile-header">
+                  <div className="profile-picture">
+                    <img src="src/img/bobby_avatar.png" alt="Bobby Avatar"/>
+                  </div>
+                  <div className="profile-name">{this.state.data.user}</div>
+                </div>
+
+              {this.state.data.donations.map(item => (
+                <ProfileProgress data={item} />
+              ))}
+
+        </div>
+      )
+      }
+
+    }
+>>>>>>> 9458da6aac13f5a1dde6a64e320485f4666612d5
 }

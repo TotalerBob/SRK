@@ -51,7 +51,7 @@
         "color": "orange",
         "projectID": "",
         "cssstyle": {
-          "background-color": "orange",
+          "background-color": "#f7c467",
           "width": "66%"
         }
       },
@@ -63,7 +63,7 @@
         "color": "orange",
         "projectID": "",
         "cssstyle": {
-          "background-color": "orange",
+          "background-color": "#f7c467",
           "width": "66%"
         }
       },
@@ -75,7 +75,7 @@
         "color": "green",
         "projectID": "",
         "cssstyle": {
-          "background-color": "green",
+          "background-color": "#74d674",
           "width": "100%"
         }
       },
@@ -87,7 +87,7 @@
         "color": "red",
         "projectID": "",
         "cssstyle": {
-          "background-color": "red",
+          "background-color": "#f35e5e",
           "width": "33%"
         }
       }

@@ -58,7 +58,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   background:white;
   color: #e2001e;
   line-height: 7vh;
-  box-shadow: 0px 0px 12px 1px #33333330;
+  box-shadow: 0px 0px 12px 1px rgba(51, 51, 51, 0.18);
   z-index: 10;
   position: fixed;
   background-image: url("../img/logo/logo.png");
@@ -71,10 +71,8 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
 .content-container {
   position: absolute;
   width: 100vw;
-  height: 83vh;
   left: 0;
   top: 60px;
-  overflow-y: auto;
   margin-bottom: 120px;
 }
 
@@ -99,7 +97,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  box-shadow: 0px 0px 12px 0px #33333342;
+  box-shadow: 0px 0px 12px 0px rgba(51, 51, 51, 0.25);;
 }
 
 
@@ -114,7 +112,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   border-radius: 50%;
   background-color: white;
   /*border: 0.5vh solid #e2001e;*/
-  box-shadow: 0px 2px 13px 2px #3333333d;
+  box-shadow: 0px 2px 13px 2px rgba(51, 51, 51, 0.23);;
   z-index: 10;
   background-image: url("../img/logo/rotes_kreuz.svg");
   background-size: 29px;
@@ -484,38 +482,135 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
 
 .profile-progress-card {
   box-sizing: content-box;
-  border: 1px solid black;
-  width: 90vw;
-  height: 20vh;
-  margin: auto;
+  border-bottom: 1px solid #e6e6e6;
+  height: 100px;
   margin: 15px;
   padding: 10px;
 }
 
 .profile-progress-title {
   font-size: 22px;
-  width: 70vw;
-  text-align: left;
   display: inline-block;
+  font-size: 20px;
 }
 
 .profile-progress-amount {
-  font-size: 22px;
+  font-size: 18px;
   text-align: right;
   display: inline-block;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .profile-progress {
-  width: 90vw;
   height: 20px;
-  border: 1px solid black;
   padding: 0px;
   margin: 0px;
+  background: #e8e8e8;
+  border-radius: 25px;
+}
+
+.profile-progress-date {
+  margin: 10px 0;
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+.profile-progress-head {
+  display:flex; 
+  align-items: center;
+  justify-content: space-between;
 }
 
 .profile-progress-fill {
   padding: 0px;
   margin: 0px;
   height: 100%;
-  background-color: red;
+  border-radius: 25px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+/* CATEGORY */
+.category-header {
+  height: 200px;
+}
+
+.category-opacity {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgba(0,0,0,0)),
+        color-stop(1, rgba(0,0,0,0))
+    );
+    background-image: -o-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    background-image: -moz-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    background-image: -webkit-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    background-image: -ms-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    background-image: linear-gradient(to top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    height:100%;
+    position:relative;
+    width:100%;
+}
+
+.category-title {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  bottom: 0;
+  position: absolute;
+}
+
+.category-subtitle {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  color: red;
+}
+
+.category-text {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  color: black;
+}
+
+.stories-date {
+  font-size: 11px;
+  padding-top: 7px;
+  padding-right: 7px;
+  color: grey;
+  text-align: right;
+}
+
+.stories-images {
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.project-container {
+  width: 90%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.project-left {
+  font-size: 12px;
+  line-height: 1.5;
+  width: 35%;
+  display: inline-block;
+}
+
+.project-right {
+  font-size: 12px;
+  line-height: 1.5;
+  width: 65%;
+  display: inline-block;
 }
