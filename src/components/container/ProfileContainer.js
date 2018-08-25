@@ -22,33 +22,34 @@ export class ProfileContainer extends Component {
         page: "profile2"
       })
     }
-
+    
 
     render(){
       // VIEW: Profile Page (Some Projects, Achievements)
       if(this.state.page === "profile") {
         return (
-            <div className="content">
-             <div className="content-container">
+          <div className="content">
 
-                 <div className="profile-header">
-                   <div className="profile-picture"></div>
-                   <div className="profile-name">{this.state.data.user}</div>
-                 </div>
+                <div className="profile-header">
+                  <div className="profile-picture">
+                    <img src="src/img/bobby_avatar.png" alt="Bobby Avatar"/>
+                  </div>
+                  <div className="profile-name">{this.state.data.user}</div>
+                </div>
 
-                 <div className="profile-scrollmenu">
+                <div className="indent-container">
+                  <h2>Letzte gespendete Projekte</h2>
+                  <div className="profile-scrollmenu">
+                    <div className="profile-inner-scroll">
+                      {this.state.data.influence.map(item => (
+                        <ProfileImpact items={item} />
+                      ))}
+                    </div>
+                  </div>
+                  <ProfileButton handler = {this.handler} />
+                </div>
 
-                   {this.state.data.influence.map(item => (
-                     <ProfileImpact items={item} />
-                   ))}
-
-                 </div>
-
-                 <ProfileButton handler = {this.handler} />
-
-             </div>
-            </div>
-
+          </div>
         );
       }
 
@@ -56,18 +57,18 @@ export class ProfileContainer extends Component {
       else if(this.state.page === "profile2") {
         return (
         <div className="content">
-         <div className="content-container">
 
-              <div className="profile-header">
-                <div className="profile-picture"></div>
-                <div className="profile-name">{this.state.data.user}</div>
-              </div>
+                <div className="profile-header">
+                  <div className="profile-picture">
+                    <img src="src/img/bobby_avatar.png" alt="Bobby Avatar"/>
+                  </div>
+                  <div className="profile-name">{this.state.data.user}</div>
+                </div>
 
               {this.state.data.donations.map(item => (
                 <ProfileProgress data={item} />
               ))}
 
-         </div>
         </div>
       )
       }
