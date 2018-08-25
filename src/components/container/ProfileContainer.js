@@ -58,16 +58,19 @@ export class ProfileContainer extends Component {
         return (
         <div className="content">
 
-                <div className="profile-header">
-                  <div className="profile-picture">
-                    <img src="src/img/bobby_avatar.png" alt="Bobby Avatar"/>
-                  </div>
-                  <div className="profile-name">{this.state.data.user}</div>
-                </div>
+          <div className="profile-header">
+            <div className="profile-picture">
+              <img src="src/img/bobby_avatar.png" alt="Bobby Avatar"/>
+            </div>
+            <div className="profile-name">{this.state.data.user}</div>
+          </div>
 
-              {this.state.data.donations.map(item => (
-                <ProfileProgress data={item} />
-              ))}
+          <div className="indent-container">
+            <h2>Alle gespendete Projekte</h2>
+            {this.state.data.donations.map(item => (
+              <ProfileProgress data={item} />
+            ))}
+          </div>
 
         </div>
       )

@@ -451,9 +451,8 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
 .profile-progress-card {
   box-sizing: content-box;
   border-bottom: 1px solid #e6e6e6;
-  height: 100px;
-  margin: 15px;
-  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .profile-progress-title {
