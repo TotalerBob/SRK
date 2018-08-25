@@ -21,11 +21,13 @@
 
 .navigation {
     position: absolute;
+    box-sizing: border-box;
     width: 100vw;
     height: 10vh;
     left: 0;
     bottom: 0;
     background-color: #444444;
+    border-top: 1vh solid #333333;
 }
 
 .navigation > .donate-button {
