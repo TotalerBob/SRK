@@ -9,24 +9,13 @@ export class ProfileContainer extends Component {
     constructor(){
         super();
         this.state = {
-          data: profileData,
-          page: "profile"
+          data: profileData
         }
-        console.log(this.state);
-        this.handler = this.handler.bind(this)
-    }
-
-    handler(e) {
-      e.preventDefault()
-      this.setState({
-        page: "profile2"
-      })
     }
     
 
     render(){
-      // VIEW: Profile Page (Some Projects, Achievements)
-      if(this.state.page === "profile") {
+
         return (
           <div className="content">
             <div className="ttt-temp">
@@ -47,33 +36,11 @@ export class ProfileContainer extends Component {
                       ))}
                     </div>
                   </div>
-                  <ProfileButton handler = {this.handler} />
+                  <ProfileButton />
                 </div>
 
             </div>
           </div>
         );
       }
-
-      // VIEW: Donation Tracking (Status bars...)
-      else if(this.state.page === "profile2") {
-        return (
-        <div className="content">
-         <div className="content-container">
-
-              <div className="profile-header">
-                <div className="profile-picture"></div>
-                <div className="profile-name">{this.state.data.user}</div>
-              </div>
-
-              {this.state.data.donations.map(item => (
-                <ProfileProgress data={item} />
-              ))}
-
-         </div>
-        </div>
-      )
-      }
-
-    }
 }

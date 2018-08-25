@@ -283,26 +283,26 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   padding-bottom: 30px;
 }
 
-.dashboard-wrapper .row {
+.row {
 }
 
-.dashboard-wrapper .row-title {
+.row-title {
   font-size: 20px;
   padding-top: 30px;
   padding-left: 30px;
 }
-.dashboard-wrapper .row-wrapper {
+.row-wrapper {
   width: 100%;
   overflow-x: scroll;
 }
-.dashboard-wrapper .row-scroller {
+.row-scroller {
   padding: 30px;
   padding-top: 20px;
   padding-bottom: 0px;
   box-sizing: content-box !important;
 }
 
-.dashboard-wrapper .row-scroller .tile-lg {
+.tile-lg {
   height: 200px;
   width: 300px;
   float: left;
@@ -311,7 +311,26 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   position: relative;
   box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
 }
-.dashboard-wrapper .row-scroller .tile {
+.tile-small {
+  height: 150px;
+  width: 46%;
+  float: left;
+  margin:2%;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+}
+.tile-wide {
+  height: 200px;
+  width: 96%;
+  float: left;
+  margin:2%;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+}
+
+.tile {
   height: 140px;
   width: 220px;
   float: left;
@@ -320,7 +339,8 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   position: relative;
   box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
 }
-.dashboard-wrapper .row-scroller .tile-tag {
+
+.tile-tag {
   background: url(./../img/bar.png);
   width: 95px;
   height: 53px;
@@ -335,7 +355,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   top: 80px;
   font-style: italic;
 }
-.dashboard-wrapper .row-scroller .tile-tag-live {
+.tile-tag-live {
   position: absolute;
   right: 15px;
   bottom: 15px;
@@ -345,7 +365,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   line-height: 14px;
   font-style: italic;
 }
-.dashboard-wrapper .row-scroller .tile-heart {
+.tile-heart {
   height: 27px;
   width: 29px;
   background: url(./../img/heart.png);
@@ -353,7 +373,19 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   right: 10px;
   top: 10px;
 }
-.dashboard-wrapper .row-scroller .tile-tag-live .dot {
+.round-checkbox {
+    border: 2px solid white;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    right: 15px;
+    bottom: 15px;
+}
+.round-checkbox.on {
+  background: url(./../img/checked.png) center no-repeat;
+}
+.tile-tag-live .dot {
   position: absolute;
   height: 12px;
   width: 12px;
@@ -361,7 +393,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   background: rgb(255, 0, 29);
   left: 0;
 }
-.dashboard-wrapper .row-scroller .tile-text {
+.tile-text {
   color: white;
   position: absolute;
   bottom: 15px;
@@ -373,7 +405,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
 }
 
-.dashboard-wrapper .row {
+.row {
 }
 /**
  * END DASHBOARD STYLE ================================
