@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { DonateButton } from "../display/DonateButton";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export class NavigationContainer extends Component {
   constructor() {
@@ -10,8 +9,25 @@ export class NavigationContainer extends Component {
   render() {
     return (
       <div className="navigation">
-        <DonateButton />
-        <Link to="/">HomePage</Link>
+        <NavLink
+          to="/donate"
+          activeClassName="navigation-active"
+          className="donate-button"
+        />
+        <NavLink
+          to="/explore"
+          className="navigation-left"
+          activeClassName="navigation-active"
+        >
+          Übersicht
+        </NavLink>
+        <NavLink
+          to="/profile"
+          className="navigation-right"
+          activeClassName="navigation-active"
+        >
+          Profil
+        </NavLink>
       </div>
     );
   }
