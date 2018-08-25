@@ -40,7 +40,7 @@ export class DonationContainer extends Component {
 
   render() {
     return (
-      <div className="content donate-page">
+      <div className="content donate-page indent-container">
         <div className="payment-settings">
           <input
             id="donation-amount"
