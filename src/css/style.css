@@ -75,7 +75,6 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
 .content-container {
   position: absolute;
   width: 100vw;
-  height: 83vh;
   left: 0;
   top: 60px;
   margin-bottom: 120px;
