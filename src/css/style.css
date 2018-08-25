@@ -299,6 +299,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   padding: 30px;
   padding-top: 20px;
   padding-bottom: 0px;
+  box-sizing: content-box !important;
 }
 
 .dashboard-wrapper .row-scroller .tile-lg {
