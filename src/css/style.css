@@ -31,6 +31,8 @@ p {
 body {
   font-size: 16px;
 }
+
+h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; margin-bottom: 20px;}
 /**
  * END GENERAL STYLE ================================
  */
@@ -73,11 +75,17 @@ body {
   left: 0;
   top: 60px;
   overflow-y: auto;
+  margin-bottom: 120px;
 }
 
 .content {
   box-sizing: border-box;
   width: 100%;
+}
+
+.indent-container {
+  padding-left:30px;
+  padding-right:30px;
 }
 
 /* Navigation */
@@ -323,13 +331,14 @@ body {
 /* PROFILE SECTION */
 .profile-header {
   height: 200px;
-  width: 100vw;
   text-align: center;
   color: white;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 20px;
 }
 
 .profile-name {
@@ -347,31 +356,47 @@ body {
 }
 
 .profile-scrollmenu {
-  overflow: auto;
+  overflow: hidden;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+.profile-scrollmenu .profile-inner-scroll {
   white-space: nowrap;
+  display: flex;
+  flex-flow: wrap;
+  width: 1800px;
 }
 
 .profile-card {
-  margin: 10px;
-  width: 33vw;
-  height: 20vh;
-  border: 1px solid black;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-right: 10px;
+  height: 200px;
+  width: 300px;
+  padding:0;
   display: inline-block;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+}
+
+.profile-card .text{
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  font-size: 14px;
+  line-height: 1.4em;
+  width: 75%;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.85);
 }
 
 .myDonation-button {
-  margin: auto;
-  width: 40%;
-  background-color: #4CAF50; /* Green */
+  background-color: #e2001a;
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: "FrutigerB";
 }
 
 .profile-progress-card {

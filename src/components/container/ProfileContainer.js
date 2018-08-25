@@ -38,15 +38,17 @@ export class ProfileContainer extends Component {
                   <div className="profile-name">{this.state.data.user}</div>
                 </div>
 
-                <div className="profile-scrollmenu">
-
-                  {this.state.data.influence.map(item => (
-                    <ProfileImpact items={item} />
-                  ))}
-
+                <div className="indent-container">
+                  <h2>Letzte gespendete Projekte</h2>
+                  <div className="profile-scrollmenu">
+                    <div className="profile-inner-scroll">
+                      {this.state.data.influence.map(item => (
+                        <ProfileImpact items={item} />
+                      ))}
+                    </div>
+                  </div>
+                  <ProfileButton handler = {this.handler} />
                 </div>
-
-                <ProfileButton handler = {this.handler} />
 
             </div>
           </div>
