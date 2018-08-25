@@ -12,7 +12,7 @@ export class DashboardContainer extends Component {
         		<div className="row">
         			<div className="row-title font-bold">Aktuelle Stories und Projekte</div>
         			<div className="row-wrapper">
-	        			<div className="row-scroller" style={{ width : '915px' }}>
+	        			<div className="row-scroller" style={{ width : '1000px' }}>
 	        				
 	        				<div className="tile-lg" style={{ backgroundImage : "url(./src/img/kategorien/opfer_vergessener_katastrophen.jpg)"}}>
 	        					<div className="tile-tag-live">
@@ -46,7 +46,7 @@ export class DashboardContainer extends Component {
         		<div className="row">
         			<div className="row-title font-bold">Dafür setzt sich das SRK ein</div>
         			<div className="row-wrapper">
-	        			<div className="row-scroller" style={{ width : '900px' }}> 
+	        			<div className="row-scroller" style={{ width : '1000px' }}> 
 	        				
 	        				<div className="tile" style={{ backgroundImage : "url(./src/img/kategorien/fluechtlinge_in_asien_brauchen_hilfe.jpg)"}}>
 	        					<div className="tile-text font-light">
@@ -80,7 +80,7 @@ export class DashboardContainer extends Component {
         		<div className="row">
         			<div className="row-title font-bold">Meine Favoriten</div>
         			<div className="row-wrapper">
-	        			<div className="row-scroller" style={{ width : '900px' }}> 
+	        			<div className="row-scroller" style={{ width : '1000px' }}> 
 	        				
 	        				<div className="tile" style={{ backgroundImage : "url(./src/img/kategorien/fluechtlinge_in_asien_brauchen_hilfe.jpg)"}}>
 	        					<div className="tile-heart"></div>

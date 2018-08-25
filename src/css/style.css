@@ -8,6 +8,12 @@
 @import url("./../fonts/FrutigerLight/stylesheet.css");
 @import url("./../fonts/FrutigerNormal/stylesheet.css");
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
 .font-light {
   font-family: "FrutigerL", Arial;
 }
@@ -71,7 +77,6 @@ body {
 
 .content {
   box-sizing: border-box;
-  padding: 2vh;
   width: 100%;
 }
 
@@ -317,22 +322,25 @@ body {
 
 /* PROFILE SECTION */
 .profile-header {
-  padding: 15px;
   height: 200px;
   width: 100vw;
   background-color: red;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
 }
 
 .profile-name {
   padding-top: 20px;
-  font-size: 25px;
-  color: white;
+  font-size: 22px;
+  color: black;
 }
 
 .profile-picture {
-  margin: auto;
+  margin: 0;
   height: 100px;
   width: 100px;
   background-color: #bbb;

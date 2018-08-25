@@ -22,14 +22,14 @@ export class ProfileContainer extends Component {
         page: "profile2"
       })
     }
-
+    
 
     render(){
       // VIEW: Profile Page (Some Projects, Achievements)
       if(this.state.page === "profile") {
         return (
             <div className="content">
-             <div className="content-container">
+             <div className="ttt-temp">
 
                  <div className="profile-header">
                    <div className="profile-picture"></div>
