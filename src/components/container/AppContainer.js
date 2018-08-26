@@ -6,7 +6,7 @@ import { NavigationContainer } from "./NavigationContainer";
 import { DashboardContainer } from "./DashboardContainer";
 import { TopBar } from "../display/TopBar";
 import { ProfileContainer } from "./ProfileContainer";
-import { CategoryContainer} from "./CategoryContainer";
+import { CategoryContainer } from "./CategoryContainer";
 import { StoryContainer } from "./StoryContainer";
 import { ProjectContainer } from "./ProjectContainer";
 

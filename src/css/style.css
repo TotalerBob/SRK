@@ -8,11 +8,13 @@
 @import url("./../fonts/FrutigerLight/stylesheet.css");
 @import url("./../fonts/FrutigerNormal/stylesheet.css");
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  }
+}
 
 .font-light {
   font-family: "FrutigerL", Arial;
@@ -32,7 +34,13 @@ body {
   font-size: 16px;
 }
 
-h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; margin-bottom: 20px;}
+h2 {
+  font-size: 20px;
+  color: #222;
+  font-family: "FrutigerB";
+  line-height: 140%;
+  margin-bottom: 20px;
+}
 /**
  * END GENERAL STYLE ================================
  */
@@ -55,7 +63,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   left: 0;
   text-align: center;
   font-size: 1.5rem;
-  background:white;
+  background: white;
   color: #e2001e;
   line-height: 7vh;
   box-shadow: 0px 0px 12px 1px rgba(51, 51, 51, 0.18);
@@ -82,8 +90,8 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
 }
 
 .indent-container {
-  padding-left:30px;
-  padding-right:30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /* Navigation */
@@ -97,10 +105,8 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  box-shadow: 0px 0px 12px 0px rgba(51, 51, 51, 0.25);;
+  box-shadow: 0px 0px 12px 0px rgba(51, 51, 51, 0.25);
 }
-
-
 
 .navigation > .donate-button {
   position: absolute;
@@ -112,7 +118,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   border-radius: 50%;
   background-color: white;
   /*border: 0.5vh solid #e2001e;*/
-  box-shadow: 0px 2px 13px 2px rgba(51, 51, 51, 0.23);;
+  box-shadow: 0px 2px 13px 2px rgba(51, 51, 51, 0.23);
   z-index: 10;
   background-image: url("../img/logo/rotes_kreuz.svg");
   background-size: 29px;
@@ -141,14 +147,14 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   background-size: 40px;
   background-repeat: no-repeat;
   font-size: 14px;
-  opacity:0.35!important;
+  opacity: 0.35 !important;
   text-align: center;
   text-decoration: none;
   color: black;
   font-weight: bolder;
   text-transform: uppercase;
   overflow: hidden;
-  padding-top:40px;
+  padding-top: 40px;
 }
 
 .navigation .navigation-right {
@@ -165,25 +171,27 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   background-size: 35px;
   background-repeat: no-repeat;
   font-size: 14px;
-  opacity:0.35!important;
+  opacity: 0.35 !important;
   text-align: center;
   text-decoration: none;
   color: black;
   font-weight: bolder;
   text-transform: uppercase;
   overflow: hidden;
-  padding-top:40px;
+  padding-top: 40px;
 }
 
-.navigation-left.navigation-active {  opacity:0.75!important; }
-.navigation-right.navigation-active {  opacity:0.75!important; }
-
+.navigation-left.navigation-active {
+  opacity: 0.75 !important;
+}
+.navigation-right.navigation-active {
+  opacity: 0.75 !important;
+}
 
 /* Donate Page */
 .donate-page {
-  margin-top:30px;
+  margin-top: 30px;
 }
-
 
 .donate-page .payment-settings #donation-amount {
   box-sizing: border-box;
@@ -259,7 +267,12 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   display: inline-block;
   background-size: cover;
   position: relative;
-  box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+
+  box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+  -ms-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+  -o-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
 }
 
 .donation-option .tile-text {
@@ -271,7 +284,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   font-size: 14px;
   line-height: 1.4em;
   width: 75%;
-  text-shadow: 0px 0px 5px rgba(0,0,0,0.85);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
 }
 
 /**
@@ -313,7 +326,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   height: 150px;
   width: 46%;
   float: left;
-  margin:2%;
+  margin: 2%;
   background-size: cover;
   position: relative;
   box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
@@ -322,7 +335,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   height: 200px;
   width: 96%;
   float: left;
-  margin:2%;
+  margin: 2%;
   background-size: cover;
   position: relative;
   box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
@@ -372,13 +385,13 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   top: 10px;
 }
 .round-checkbox {
-    border: 2px solid white;
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    border-radius: 14px;
-    right: 15px;
-    bottom: 15px;
+  border: 2px solid white;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  right: 15px;
+  bottom: 15px;
 }
 .round-checkbox.on {
   background: url(./../img/checked.png) center no-repeat;
@@ -452,14 +465,19 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   margin-right: 10px;
   height: 200px;
   width: 300px;
-  padding:0;
+  padding: 0;
   display: inline-block;
   background-size: cover;
   position: relative;
-  box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+
+  box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+  -ms-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+  -o-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
 }
 
-.profile-card .text{
+.profile-card .text {
   color: white;
   position: absolute;
   bottom: 15px;
@@ -468,7 +486,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   font-size: 14px;
   line-height: 1.4em;
   width: 75%;
-  text-shadow: 0px 0px 5px rgba(0,0,0,0.85);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
 }
 
 .myDonation-button {
@@ -483,9 +501,8 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
 .profile-progress-card {
   box-sizing: content-box;
   border-bottom: 1px solid #e6e6e6;
-  height: 100px;
-  margin: 15px;
-  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .profile-progress-title {
@@ -517,7 +534,7 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
 }
 
 .profile-progress-head {
-  display:flex; 
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -540,21 +557,25 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
 }
 
 .category-opacity {
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, rgba(0,0,0,0)),
-        color-stop(1, rgba(0,0,0,0))
-    );
-    background-image: -o-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
-    background-image: -moz-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
-    background-image: -webkit-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
-    background-image: -ms-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
-    background-image: linear-gradient(to top, #ffffff 0%, rgba(0,0,0,0) 50%);
-    height:100%;
-    position:relative;
-    width:100%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, rgba(0, 0, 0, 0)),
+    color-stop(1, rgba(0, 0, 0, 0))
+  );
+  background-image: -o-linear-gradient(top, #ffffff 0%, rgba(0, 0, 0, 0) 50%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, rgba(0, 0, 0, 0) 50%);
+  background-image: -webkit-linear-gradient(
+    top,
+    #ffffff 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  background-image: -ms-linear-gradient(top, #ffffff 0%, rgba(0, 0, 0, 0) 50%);
+  background-image: linear-gradient(to top, #ffffff 0%, rgba(0, 0, 0, 0) 50%);
+  height: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .category-title {
@@ -614,3 +635,5 @@ h2 { font-size:20px; color:#222; font-family: "FrutigerB"; line-height: 140%; ma
   width: 65%;
   display: inline-block;
 }
+
+/* Images */
