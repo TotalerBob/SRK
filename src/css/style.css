@@ -94,6 +94,12 @@ h2 {
   padding-right: 30px;
 }
 
+.silver-line {
+  border-bottom: 1px solid #e2e2e2;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
 /* Navigation */
 .navigation {
   position: fixed;
@@ -458,7 +464,21 @@ h2 {
   white-space: nowrap;
   display: flex;
   flex-flow: wrap;
-  width: 1800px;
+  width: 1600px;
+}
+
+.profile-stats {
+ display:flex;
+ flex-flow: column;
+}
+
+.profile-stats .line {
+  display:flex;
+  line-height:150%;
+}
+.profile-stats .name {
+  width:200px;
+  color:grey;
 }
 
 .profile-card {
@@ -487,6 +507,11 @@ h2 {
   line-height: 1.4em;
   width: 75%;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
+}
+
+.profile-badges img {
+  width:100%;
+  max-width:400px;
 }
 
 .myDonation-button {
