@@ -12,7 +12,7 @@ export class StoryContainer extends Component {
           <div
             style={{
               backgroundImage:
-                "url(./src/img/stories/jeder_zweite_syrier_ist_auf_der_flucht.jpg)",
+                "url(https://jsbrawl.blob.core.windows.net/srk/jeder_zweite_syrier_ist_auf_der_flucht.jpg)",
               width: "100%",
               height: "100%",
               backgroundSize: "cover",
@@ -40,7 +40,10 @@ export class StoryContainer extends Component {
         </div>
 
         <div className="stories-images">
-          <img src={"./src/img/stories/stories_images.png"} width="90%" />
+          <img
+            src={"https://jsbrawl.blob.core.windows.net/srk/stories_images.png"}
+            width="90%"
+          />
         </div>
       </div>
     );

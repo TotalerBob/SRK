@@ -18,7 +18,10 @@ export class ProfileContainer extends Component {
       <div>
         <div className="profile-header">
           <div className="profile-picture">
-            <img src="src/img/bobby_avatar.png" alt="Bobby Avatar" />
+            <img
+              src="https://jsbrawl.blob.core.windows.net/srk/bobby_avatar.png"
+              alt="Bobby Avatar"
+            />
           </div>
           <div className="profile-name">{this.state.data.user}</div>
         </div>
@@ -42,7 +45,10 @@ export class ProfileContainer extends Component {
 
           <div className="badges">
             <div className="profile-badges">
-              <img src="src/img/badges/badges.png" alt="" />
+              <img
+                src="https://jsbrawl.blob.core.windows.net/srk/badges.png"
+                alt=""
+              />
             </div>
             <div className="silver-line" />
             <div className="profile-stats">

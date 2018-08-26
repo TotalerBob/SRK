@@ -6,8 +6,7 @@ class ProfileImpact extends React.Component {
       <div
         className="profile-card"
         style={{
-          backgroundImage:
-            "url('./src/img/stories/" + this.props.items.img + "')"
+          backgroundImage: "url('" + this.props.items.img + "')"
         }}
       >
         <div className="text">

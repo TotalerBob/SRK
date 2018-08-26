@@ -12,7 +12,7 @@ export class CategoryContainer extends Component {
           <div
             style={{
               backgroundImage:
-                "url(./src/img/kategorien/hilfe_fuer_familien_in_der_schweiz.jpg)",
+                "url(https://jsbrawl.blob.core.windows.net/srk/hilfe_fuer_familien_in_der_schweiz.jpg)",
               width: "100%",
               height: "100%",
               backgroundSize: "cover",
@@ -33,7 +33,7 @@ export class CategoryContainer extends Component {
 
         <img
           class="category-spende-button"
-          src="src/img/spende_btn.PNG"
+          src="https://jsbrawl.blob.core.windows.net/srk/spende_btn.PNG"
           alt=""
           width="354"
           height="99"

@@ -12,7 +12,7 @@ export class ProjectContainer extends Component {
           <div
             style={{
               backgroundImage:
-                "url(./src/img/stories/8_DSC0427312171_Redcross_Original.jpg)",
+                "url(https://jsbrawl.blob.core.windows.net/srk/8_DSC0427312171_Redcross_Original.jpg)",
               width: "100%",
               height: "100%",
               backgroundSize: "cover",
@@ -50,10 +50,16 @@ export class ProjectContainer extends Component {
         </div>
 
         <div className="stories-images">
-          <img src={"./src/img/progress.png"} width="90%" />
+          <img
+            src={"https://jsbrawl.blob.core.windows.net/srk/progress.png"}
+            width="90%"
+          />
         </div>
         <div className="stories-images">
-          <img src={"./src/img/world_ghana.PNG"} width="90%" />
+          <img
+            src={"https://jsbrawl.blob.core.windows.net/srk/world_ghana.PNG"}
+            width="90%"
+          />
         </div>
         <br />
         <br />

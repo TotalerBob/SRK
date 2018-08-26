@@ -1,31 +1,31 @@
 {
   "user": "Robert Jones",
-  "img": "../../img/profile/bobby_avatar.png",
+  "img": "https://jsbrawl.blob.core.windows.net/srk/bobby_avatar.png",
   "influence": [
     {
       "projectName": "Projekt 1",
       "desc": "Hilfe für Menschen auf der Flucht",
-      "img": "jeder_zweite_syrier_ist_auf_der_flucht.jpg"
+      "img": "https://jsbrawl.blob.core.windows.net/srk/jeder_zweite_syrier_ist_auf_der_flucht.jpg"
     },
     {
       "projectName": "Projekt 2",
       "desc": "Mit Ihrer Spende retten Sie Leben in Somaliland",
-      "img": "8_DSC0427312171_Redcross_Original.jpg"
+      "img": "https://jsbrawl.blob.core.windows.net/srk/8_DSC0427312171_Redcross_Original.jpg"
     },
     {
       "projectName": "Projekt 3",
       "desc": "Beschreibung Projekt 3...",
-      "img": "Libanon_Refugees_LR-4095.jpg"
+      "img": "https://jsbrawl.blob.core.windows.net/srk/Libanon_Refugees_LR-4095.jpg"
     },
     {
       "projectName": "Projekt 4",
       "desc": "Beschreibung Projekt 4...",
-      "img": "plateforme_Familie.jpg"
+      "img": "https://jsbrawl.blob.core.windows.net/srk/plateforme_Familie.jpg"
     },
     {
       "projectName": "Projekt 5",
       "desc": "Beschreibung Projekt 5...",
-      "img": "REN_5757.jpg"
+      "img": "https://jsbrawl.blob.core.windows.net/srk/REN_5757.jpg"
     }
   ],
   "achievements": [
