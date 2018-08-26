@@ -215,12 +215,17 @@ h2 {
   margin: 0;
   padding: 0;
   width: 33.333%;
-  height: 6vh;
-  background-color: #e2001e;
+  height: 40px;
   color: white;
   box-shadow: 0 0 0 0 #000000;
   border: none;
   font-style: "FrutigerB", Arial;
+
+  color: #e2001e;
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px solid #d4d4d4;
+  background: #fbfbfb;
 }
 
 .donation-recommendations-button:active {
@@ -235,18 +240,79 @@ h2 {
   border-left: 1px solid white;
 }
 
-.donation-interval {
-  width: 33.333%;
-  height: 6vh;
-  display: inline-block;
-  text-align: center;
-  line-height: 6vh;
+.donation-intervals {
+  display:flex;
+  justify-content: space-around;
+  margin-top: 15px;
 }
 
+.donation-interval {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.donation-interval input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.donation-interval label {
+  font-size: 16px;
+  color: #737373;
+}
+
+
+.donation-interval .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.donation-interval:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.donation-interval input:checked ~ .checkmark {
+  background-color: #e2001e;
+}
+.donation-interval .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  
+}
+.donation-interval input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.donation-interval .checkmark:after {
+  left: 9px;
+  top: 2px;
+  width: 8px;
+  height: 18px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
 .donation-divider {
-  margin-top: 2vh;
-  font-size: 4vmin;
-  color: #aaaaaa;
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
   text-align: center;
 }
 
