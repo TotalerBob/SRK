@@ -17,7 +17,7 @@ export class ProfileContainerAll extends Component {
 
         return (
         <div className="content">
-         <div className="content-container">
+         <div className="indent-container">
 
               <div className="profile-header">
                 <div className="profile-picture"></div>
