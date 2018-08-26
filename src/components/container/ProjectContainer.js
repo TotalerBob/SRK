@@ -10,7 +10,7 @@ export class ProjectContainer extends Component {
 
           <div className="dashboard-wrapper">
             <div className="category-header">
-              <div style={{ backgroundImage : "url(./src/img/stories/jeder_zweite_syrier_ist_auf_der_flucht.jpg)",width: "100%",height:"100%",backgroundSize:"cover",backgroundPosition:"0 30%"}}>
+              <div style={{ backgroundImage : "url(./src/img/stories/8_DSC0427312171_Redcross_Original.jpg)",width: "100%",height:"100%",backgroundSize:"cover",backgroundPosition:"0 30%"}}>
                 <div className="category-opacity">
                   <div className="category-title font-bold">Projekt Schutz vor Epidemien Ghana</div>
                 </div>
@@ -40,10 +40,10 @@ export class ProjectContainer extends Component {
             </div>
 
             <div className="stories-images">
-              <img src={'./src/img/projects/progress.jpeg'} width="90%" />
+              <img src={'./src/img/progress.png'} width="90%" />
             </div>
             <div className="stories-images">
-              <img src={'./src/img/projects/world_map.png'} width="90%" />
+              <img src={'./src/img/world_ghana.PNG'} width="90%" />
             </div>
             <br /><br />
 
