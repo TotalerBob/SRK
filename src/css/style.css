@@ -105,7 +105,7 @@ h2 {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  box-shadow: 0px 0px 12px 0px rgba(51, 51, 51, 0.25);;
+  box-shadow: 0px 0px 12px 0px rgba(51, 51, 51, 0.25);
 }
 
 .navigation > .donate-button {
@@ -118,7 +118,7 @@ h2 {
   border-radius: 50%;
   background-color: white;
   /*border: 0.5vh solid #e2001e;*/
-  box-shadow: 0px 2px 13px 2px rgba(51, 51, 51, 0.23);;
+  box-shadow: 0px 2px 13px 2px rgba(51, 51, 51, 0.23);
   z-index: 10;
   background-image: url("../img/logo/rotes_kreuz.svg");
   background-size: 29px;
@@ -267,15 +267,12 @@ h2 {
   display: inline-block;
   background-size: cover;
   position: relative;
-<<<<<<< HEAD
+
   box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -webkit-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -ms-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -o-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
-=======
-  box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
->>>>>>> 00a15bdb8fc1a73e520af2a6172d6122937a3da9
 }
 
 .donation-option .tile-text {
@@ -329,7 +326,7 @@ h2 {
   height: 150px;
   width: 46%;
   float: left;
-  margin:2%;
+  margin: 2%;
   background-size: cover;
   position: relative;
   box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
@@ -338,7 +335,7 @@ h2 {
   height: 200px;
   width: 96%;
   float: left;
-  margin:2%;
+  margin: 2%;
   background-size: cover;
   position: relative;
   box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
@@ -388,13 +385,13 @@ h2 {
   top: 10px;
 }
 .round-checkbox {
-    border: 2px solid white;
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    border-radius: 14px;
-    right: 15px;
-    bottom: 15px;
+  border: 2px solid white;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  right: 15px;
+  bottom: 15px;
 }
 .round-checkbox.on {
   background: url(./../img/checked.png) center no-repeat;
@@ -472,15 +469,12 @@ h2 {
   display: inline-block;
   background-size: cover;
   position: relative;
-<<<<<<< HEAD
+
   box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -webkit-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -ms-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -o-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
-=======
-  box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
->>>>>>> 00a15bdb8fc1a73e520af2a6172d6122937a3da9
 }
 
 .profile-card .text {
@@ -540,7 +534,7 @@ h2 {
 }
 
 .profile-progress-head {
-  display:flex; 
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -563,21 +557,25 @@ h2 {
 }
 
 .category-opacity {
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, rgba(0,0,0,0)),
-        color-stop(1, rgba(0,0,0,0))
-    );
-    background-image: -o-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
-    background-image: -moz-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
-    background-image: -webkit-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
-    background-image: -ms-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
-    background-image: linear-gradient(to top, #ffffff 0%, rgba(0,0,0,0) 50%);
-    height:100%;
-    position:relative;
-    width:100%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, rgba(0, 0, 0, 0)),
+    color-stop(1, rgba(0, 0, 0, 0))
+  );
+  background-image: -o-linear-gradient(top, #ffffff 0%, rgba(0, 0, 0, 0) 50%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, rgba(0, 0, 0, 0) 50%);
+  background-image: -webkit-linear-gradient(
+    top,
+    #ffffff 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  background-image: -ms-linear-gradient(top, #ffffff 0%, rgba(0, 0, 0, 0) 50%);
+  background-image: linear-gradient(to top, #ffffff 0%, rgba(0, 0, 0, 0) 50%);
+  height: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .category-title {
