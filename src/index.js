@@ -16,13 +16,14 @@ require("./css/style.css");
 import AppContainer from "./components/container/AppContainer";
 import ReactDOM from "react-dom";
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, withRouter } from "react-router-dom";
 
-const App = () => (
-  <Router>
-    <AppContainer />
-  </Router>
-);
+const App = withRouter(({ location }) => {
+	return (
+	    <AppContainer 
+	    loc={{location}} />
+  );
+});
 
 const wrapper = document.querySelector("#app");
-wrapper ? ReactDOM.render(<App />, wrapper) : false;
+wrapper ? ReactDOM.render(<Router><App /></Router>, wrapper) : false;

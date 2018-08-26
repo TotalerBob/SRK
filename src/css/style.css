@@ -49,6 +49,7 @@ h2 {
   outline: none;
 }
 
+
 .container {
   position: relative;
   width: 100vw;
@@ -87,7 +88,26 @@ h2 {
 .content {
   box-sizing: border-box;
   width: 100%;
+  position: absolute;
 }
+
+.fade-enter {
+    opacity: 0.01;
+  }
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+  }
+
+.fade-exit {
+    opacity: 1;
+  }
+
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
 
 .indent-container {
   padding-left: 30px;

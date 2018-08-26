@@ -28,25 +28,27 @@ export default class AppContainer extends Component {
         <div className="content-container">
           <TransitionGroup className="transition-group">
             <CSSTransition
-              key={location.key}
+              key={this.props.loc.location.key}
               timeout={{ enter: 300, exit: 300 }}
               classNames="fade"
             >
-            
-              <Switch location={location}>
-                <Route exact path="/" component={DashboardContainer} />
-                <Route exact path="/profile" component={ProfileContainer} />
-                <Route exact path="/category" component={CategoryContainer} />
-                <Route exact path="/story" component={StoryContainer} />
-                <Route exact path="/project" component={ProjectContainer} />
-                <Route exact path="/profileAll" component={ProfileContainerAll} />
-                <Route exact path="/donate" component={DonationContainer} />
-              </Switch>
+
+                <Switch location={this.props.loc.location}>
+                  <Route exact path="/" component={DashboardContainer} />
+                  <Route exact path="/profile" component={ProfileContainer} />
+                  <Route exact path="/category" component={CategoryContainer} />
+                  <Route exact path="/story" component={StoryContainer} />
+                  <Route exact path="/project" component={ProjectContainer} />
+                  <Route exact path="/profileAll" component={ProfileContainerAll} />
+                  <Route exact path="/donate" component={DonationContainer} />
+                </Switch>
+              
             </CSSTransition>
           </TransitionGroup>
-        </div>
+       
         <TopBar />
         <NavigationContainer />
+        </div>
       </div>
     );
   }
