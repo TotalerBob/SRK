@@ -77,30 +77,32 @@ export class DonationContainer extends Component {
               }}
             />
           </div>
-          <DonationCheckbox
-            id="single"
-            title="Einmalig"
-            setValue={checkbox => {
-              this.setCurrentCheckbox(checkbox);
-            }}
-            checked={this.state.currentCheckbox === "single"}
-          />
-          <DonationCheckbox
-            id="monthly"
-            title="Monatlich"
-            setValue={checkbox => {
-              this.setCurrentCheckbox(checkbox);
-            }}
-            checked={this.state.currentCheckbox === "monthly"}
-          />
-          <DonationCheckbox
-            id="yearly"
-            title="Jährlich"
-            setValue={checkbox => {
-              this.setCurrentCheckbox(checkbox);
-            }}
-            checked={this.state.currentCheckbox === "yearly"}
-          />
+          <div className="donation-intervals">
+            <DonationCheckbox
+              id="single"
+              title="Einmalig"
+              setValue={checkbox => {
+                this.setCurrentCheckbox(checkbox);
+              }}
+              checked={this.state.currentCheckbox === "single"}
+            />
+            <DonationCheckbox
+              id="monthly"
+              title="Monatlich"
+              setValue={checkbox => {
+                this.setCurrentCheckbox(checkbox);
+              }}
+              checked={this.state.currentCheckbox === "monthly"}
+            />
+            <DonationCheckbox
+              id="yearly"
+              title="Jährlich"
+              setValue={checkbox => {
+                this.setCurrentCheckbox(checkbox);
+              }}
+              checked={this.state.currentCheckbox === "yearly"}
+            />
+          </div>
         </div>
         <p className="donation-divider">Wohin soll die Spende gehen?</p>
 

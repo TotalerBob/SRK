@@ -1,7 +1,7 @@
 {
 	"projectsAndStories" : [
 		{
-			"title" : "Überschwemmungen, Erdbeben, Gewalt und Hunger rauben jährlich Hunderttausenden die Existenzgrundlage.",
+			"title" : "Erdbeben in Haiti.",
 			"image" : "./src/img/stories/11_p-HTI1628.jpg",
 			"live" : true
 		},
@@ -30,7 +30,7 @@
 			"image" : "./src/img/kategorien/fluechtlinge_in_asien_brauchen_hilfe.jpg"
 		},
 		{
-			"title" : "Afrika hat Hunger.",
+			"title" : "Mit Ihrer Spende retten Sie Leben in Somaliland, Äthiopien und Südsudan",
 			"image" : "./src/img/kategorien/hunger_in_afrika.jpg"
 		}
 
