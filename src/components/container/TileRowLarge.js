@@ -33,11 +33,11 @@ export class TileRowLarge extends Component {
             <div
               className="tile-lg"
               style={{
-                width: "25vmin",
-                height: "25vmin",
+                width: "100px",
+                height: "100px",
                 backgroundColor: "#e2001e",
                 boxShadow: "none",
-                margin: "12vmin"
+                margin: "45px"
               }}
             >
               <div
@@ -46,7 +46,7 @@ export class TileRowLarge extends Component {
                   boxSizing: "border-box",
                   width: "100%",
                   textAlign: "center",
-                  fontSize: "4.5vmin",
+                  fontSize: "14pt",
                   bottom: "25%",
                   left: "0",
                   color: "white",
