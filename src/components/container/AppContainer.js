@@ -26,7 +26,7 @@ export default class AppContainer extends Component {
               classNames="fade"
             >
               <Switch location={location}>
-                <Route exact path="/" component={ProjectContainer} />
+                <Route exact path="/" component={DashboardContainer} />
                 <Route exact path="/donate" component={DonationContainer} />
                 <Route exact path="/profile" component={ProfileContainer} />
               </Switch>
