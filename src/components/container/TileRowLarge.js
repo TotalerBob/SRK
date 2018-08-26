@@ -44,7 +44,7 @@ export class TileRowLarge extends Component {
                   boxSizing: "border-box",
                   width: "100%",
                   textAlign: "center",
-                  fontSize: "16pt",
+                  fontSize: "14pt",
                   bottom: "25%",
                   left: "0",
                   color: "white",
