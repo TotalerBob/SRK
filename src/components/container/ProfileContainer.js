@@ -3,6 +3,7 @@ import ProfileImpact from "../display/ProfileImpact";
 import ProfileButton from "../display/ProfileButton";
 import { ProfileProgress } from "../display/ProfileProgress";
 import profileData from "../../data/profile.json";
+import { Link } from 'react-router-dom';
 
 export class ProfileContainer extends Component {
   constructor() {
@@ -27,7 +28,7 @@ export class ProfileContainer extends Component {
           <div className="profile-scrollmenu">
             <div className="profile-inner-scroll">
               {this.state.data.influence.map(item => (
-                <ProfileImpact items={item} />
+                <Link to="/project"><ProfileImpact items={item} /></Link>
               ))}
             </div>
           </div>

@@ -8,6 +8,10 @@
 @import url("./../fonts/FrutigerLight/stylesheet.css");
 @import url("./../fonts/FrutigerNormal/stylesheet.css");
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 *,
 *:before,
 *:after {
