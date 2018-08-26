@@ -21,6 +21,8 @@ export class CategoryContainer extends Component {
               Gemeinsam Unterstützen wir Familien in der Schweiz.
             </div>
 
+            <img class="category-spende-button" src="src/img/spende_btn.PNG" alt="" width="354" height="99"/>
+
             <div className="category-text font-light">
             Wir sind in der ganzen Schweiz für Eltern in schwierigen Lagen da
             Es reicht, den Fuss vor die Tür zu setzen, um auf schlimme Schicksale zu stossen. In der Schweiz wohnen Menschen, die dringend auf Hilfe angewiesen sind. Eine Million Menschen in unserem Land leben in Armut – oder knapp über der Armutsgrenze.
@@ -28,6 +30,8 @@ export class CategoryContainer extends Component {
             Armut und soziale Not sind in der Schweiz häufig weniger augenfällig als in den Ländern des Südens. Für die Betroffenen, oftmals Familien, sind die Auswirkungen jedoch nicht minder schwer zu ertragen. Diese Menschen brauchen Ihre Hilfe.
 
             </div>
+
+            
 
           </div>
 
