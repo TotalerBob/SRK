@@ -66,11 +66,7 @@ h2 {
   background: white;
   color: #e2001e;
   line-height: 7vh;
-  box-shadow: 0px 0px 12px 1px #33333330;
-  -webkit-box-shadow: 0px 0px 12px 1px #33333330;
-  -moz-box-shadow: 0px 0px 12px 1px #33333330;
-  -ms-box-shadow: 0px 0px 12px 1px #33333330;
-  -o-box-shadow: 0px 0px 12px 1px #33333330;
+  box-shadow: 0px 0px 12px 1px rgba(51, 51, 51, 0.18);
   z-index: 10;
   position: fixed;
   background-image: url("../img/logo/logo.png");
@@ -109,11 +105,7 @@ h2 {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  box-shadow: 0px 0px 12px 0px #33333342;
-  -webkit-box-shadow: 0px 0px 12px 0px #33333342;
-  -moz-box-shadow: 0px 0px 12px 0px #33333342;
-  -ms-box-shadow: 0px 0px 12px 0px #33333342;
-  -o-box-shadow: 0px 0px 12px 0px #33333342;
+  box-shadow: 0px 0px 12px 0px rgba(51, 51, 51, 0.25);;
 }
 
 .navigation > .donate-button {
@@ -126,11 +118,7 @@ h2 {
   border-radius: 50%;
   background-color: white;
   /*border: 0.5vh solid #e2001e;*/
-  box-shadow: 0px 2px 13px 2px #3333333d;
-  -webkit-box-shadow: 0px 2px 13px 2px #3333333d;
-  -moz-box-shadow: 0px 2px 13px 2px #3333333d;
-  -ms-box-shadow: 0px 2px 13px 2px #3333333d;
-  -o-box-shadow: 0px 2px 13px 2px #3333333d;
+  box-shadow: 0px 2px 13px 2px rgba(51, 51, 51, 0.23);;
   z-index: 10;
   background-image: url("../img/logo/rotes_kreuz.svg");
   background-size: 29px;
@@ -225,10 +213,6 @@ h2 {
   background-color: #e2001e;
   color: white;
   box-shadow: 0 0 0 0 #000000;
-  -webkit-box-shadow: 0 0 0 0 #000000;
-  -moz-box-shadow: 0 0 0 0 #000000;
-  -ms-box-shadow: 0 0 0 0 #000000;
-  -o-box-shadow: 0 0 0 0 #000000;
   border: none;
   font-style: "FrutigerB", Arial;
 }
@@ -290,6 +274,7 @@ h2 {
   -ms-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -o-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
 =======
+  box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
 >>>>>>> 00a15bdb8fc1a73e520af2a6172d6122937a3da9
 }
 
@@ -312,26 +297,26 @@ h2 {
   padding-bottom: 30px;
 }
 
-.dashboard-wrapper .row {
+.row {
 }
 
-.dashboard-wrapper .row-title {
+.row-title {
   font-size: 20px;
   padding-top: 30px;
   padding-left: 30px;
 }
-.dashboard-wrapper .row-wrapper {
+.row-wrapper {
   width: 100%;
   overflow-x: scroll;
 }
-.dashboard-wrapper .row-scroller {
+.row-scroller {
   padding: 30px;
   padding-top: 20px;
   padding-bottom: 0px;
   box-sizing: content-box !important;
 }
 
-.dashboard-wrapper .row-scroller .tile-lg {
+.tile-lg {
   height: 200px;
   width: 300px;
   float: left;
@@ -339,12 +324,27 @@ h2 {
   background-size: cover;
   position: relative;
   box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
-  -webkit-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
-  -moz-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
-  -ms-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
-  -o-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
 }
-.dashboard-wrapper .row-scroller .tile {
+.tile-small {
+  height: 150px;
+  width: 46%;
+  float: left;
+  margin:2%;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+}
+.tile-wide {
+  height: 200px;
+  width: 96%;
+  float: left;
+  margin:2%;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+}
+
+.tile {
   height: 140px;
   width: 220px;
   float: left;
@@ -352,12 +352,9 @@ h2 {
   background-size: cover;
   position: relative;
   box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
-  -webkit-box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
-  -moz-box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
-  -ms-box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
-  -o-box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.85);
 }
-.dashboard-wrapper .row-scroller .tile-tag {
+
+.tile-tag {
   background: url(./../img/bar.png);
   width: 95px;
   height: 53px;
@@ -372,7 +369,7 @@ h2 {
   top: 80px;
   font-style: italic;
 }
-.dashboard-wrapper .row-scroller .tile-tag-live {
+.tile-tag-live {
   position: absolute;
   right: 15px;
   bottom: 15px;
@@ -382,7 +379,7 @@ h2 {
   line-height: 14px;
   font-style: italic;
 }
-.dashboard-wrapper .row-scroller .tile-heart {
+.tile-heart {
   height: 27px;
   width: 29px;
   background: url(./../img/heart.png);
@@ -390,7 +387,19 @@ h2 {
   right: 10px;
   top: 10px;
 }
-.dashboard-wrapper .row-scroller .tile-tag-live .dot {
+.round-checkbox {
+    border: 2px solid white;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    right: 15px;
+    bottom: 15px;
+}
+.round-checkbox.on {
+  background: url(./../img/checked.png) center no-repeat;
+}
+.tile-tag-live .dot {
   position: absolute;
   height: 12px;
   width: 12px;
@@ -398,7 +407,7 @@ h2 {
   background: rgb(255, 0, 29);
   left: 0;
 }
-.dashboard-wrapper .row-scroller .tile-text {
+.tile-text {
   color: white;
   position: absolute;
   bottom: 15px;
@@ -410,7 +419,7 @@ h2 {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
 }
 
-.dashboard-wrapper .row {
+.row {
 }
 /**
  * END DASHBOARD STYLE ================================
@@ -463,11 +472,15 @@ h2 {
   display: inline-block;
   background-size: cover;
   position: relative;
+<<<<<<< HEAD
   box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -webkit-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -ms-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -o-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+=======
+  box-shadow: inset 0px -50px 50px rgba(0,0,0,.85);
+>>>>>>> 00a15bdb8fc1a73e520af2a6172d6122937a3da9
 }
 
 .profile-card .text {
@@ -493,40 +506,136 @@ h2 {
 
 .profile-progress-card {
   box-sizing: content-box;
-  border: 1px solid black;
-  width: 90vw;
-  height: 20vh;
-  margin: auto;
-  margin: 15px;
-  padding: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .profile-progress-title {
   font-size: 22px;
-  width: 70vw;
-  text-align: left;
   display: inline-block;
+  font-size: 20px;
 }
 
 .profile-progress-amount {
-  font-size: 22px;
+  font-size: 18px;
   text-align: right;
   display: inline-block;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .profile-progress {
-  width: 90vw;
   height: 20px;
-  border: 1px solid black;
   padding: 0px;
   margin: 0px;
+  background: #e8e8e8;
+  border-radius: 25px;
+}
+
+.profile-progress-date {
+  margin: 10px 0;
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+.profile-progress-head {
+  display:flex; 
+  align-items: center;
+  justify-content: space-between;
 }
 
 .profile-progress-fill {
   padding: 0px;
   margin: 0px;
   height: 100%;
-  background-color: red;
+  border-radius: 25px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+/* CATEGORY */
+.category-header {
+  height: 200px;
+}
+
+.category-opacity {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgba(0,0,0,0)),
+        color-stop(1, rgba(0,0,0,0))
+    );
+    background-image: -o-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    background-image: -moz-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    background-image: -webkit-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    background-image: -ms-linear-gradient(top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    background-image: linear-gradient(to top, #ffffff 0%, rgba(0,0,0,0) 50%);
+    height:100%;
+    position:relative;
+    width:100%;
+}
+
+.category-title {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  bottom: 0;
+  position: absolute;
+}
+
+.category-subtitle {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  color: red;
+}
+
+.category-text {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  color: black;
+}
+
+.stories-date {
+  font-size: 11px;
+  padding-top: 7px;
+  padding-right: 7px;
+  color: grey;
+  text-align: right;
+}
+
+.stories-images {
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.project-container {
+  width: 90%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.project-left {
+  font-size: 12px;
+  line-height: 1.5;
+  width: 35%;
+  display: inline-block;
+}
+
+.project-right {
+  font-size: 12px;
+  line-height: 1.5;
+  width: 65%;
+  display: inline-block;
 }
 
 /* Images */
