@@ -124,10 +124,8 @@ export class DonationContainer extends Component {
           );
         })}
 
-        <div style={{"width":"100px","height":"550px"}}></div>
+        <div style={{ width: "100px", height: "550px" }} />
       </div>
-
-
     );
   }
 }

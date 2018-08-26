@@ -22,7 +22,7 @@ export class TileRow extends Component {
                     text: val.title,
                     image: val.image,
                     heart: val.heart,
-                    link : val.link
+                    link: val.link
                   }}
                 />
               );

@@ -1,63 +1,62 @@
 {
-	"projectsAndStories" : [
-		{
-			"title" : "Erdbeben in Haiti.",
-			"image" : "./src/img/stories/11_p-HTI1628.jpg",
-			"live" : true
-		},
-		{
-			"title" : "Jeder zweite Syrer ist auf der Flucht, etwa die Hälfte der Betroffenen sind Kinder.",
-			"image" : "./src/img/kategorien/fluechtlinge_in_asien_brauchen_hilfe.jpg",
-			"tag" : "STORY",
-			"link" : "story"
-		},
-		{
-			"title" : "Jeder zweite Syrer ist auf der Flucht, etwa die Hälfte der Betroffenen sind Kinder.",
-			"image" : "./src/img/kategorien/das_ambulatorium_fuer_folter_und_kriegsopfer.jpg",
-			"tag" : "PROJECT"
-		}
-	],
-	"projectsAndCategories" : [
-		{
-			"title" : "Hilfe für Familien in der Schweiz.",
-			"image" : "./src/img/kategorien/hilfe_fuer_familien_in_der_schweiz.jpg",
-			"link" : "category"
-		},
-		{
-			"title" : "Licht in das Leben der Ärmsten bringen.",
-			"image" : "./src/img/kategorien/licht_in_das_leben_der_aermsten_bringen.jpg"
-		},
-		{
-			"title" : "Flüchtlinge in Asien brauchen Hilfe.",
-			"image" : "./src/img/kategorien/fluechtlinge_in_asien_brauchen_hilfe.jpg"
-		},
-		{
-			"title" : "Mit Ihrer Spende retten Sie Leben in Somaliland, Äthiopien und Südsudan",
-			"image" : "./src/img/kategorien/hunger_in_afrika.jpg"
-		}
-
-	],
-	"myFavorites" : [
-		{
-			"title" : "Projekt Schutz vor Epidemien Ghana",
-			"image" : "./src/img/stories/8_DSC0427312171_Redcross_Original.jpg",
-			"heart" : true,
-			"link" : "project"
-		},
-		{
-			"title" : "Nothilfe weltweit",
-			"image" : "./src/img/kategorien/nothilfe_weltweit.jpg",
-			"heart" : true
-		},
-		{
-			"title" : "Afrika hat Hunger.",
-			"image" : "./src/img/kategorien/hunger_in_afrika.jpg",
-			"heart" : true
-		},
-		{
-			"title" : "Licht in das Leben der Ärmsten bringen.",
-			"image" : "./src/img/kategorien/licht_in_das_leben_der_aermsten_bringen.jpg",
-			"heart" : true
-		}
-	]
+  "projectsAndStories": [
+    {
+      "title": "Erdbeben in Haiti.",
+      "image": "./src/img/stories/11_p-HTI1628.jpg",
+      "live": true
+    },
+    {
+      "title": "Jeder zweite Syrer ist auf der Flucht, etwa die Hälfte der Betroffenen sind Kinder.",
+      "image": "./src/img/kategorien/fluechtlinge_in_asien_brauchen_hilfe.jpg",
+      "tag": "STORY",
+      "link": "story"
+    },
+    {
+      "title": "Jeder zweite Syrer ist auf der Flucht, etwa die Hälfte der Betroffenen sind Kinder.",
+      "image": "./src/img/kategorien/das_ambulatorium_fuer_folter_und_kriegsopfer.jpg",
+      "tag": "PROJECT"
+    }
+  ],
+  "projectsAndCategories": [
+    {
+      "title": "Hilfe für Familien in der Schweiz.",
+      "image": "./src/img/kategorien/hilfe_fuer_familien_in_der_schweiz.jpg",
+      "link": "category"
+    },
+    {
+      "title": "Licht in das Leben der Ärmsten bringen.",
+      "image": "./src/img/kategorien/licht_in_das_leben_der_aermsten_bringen.jpg"
+    },
+    {
+      "title": "Flüchtlinge in Asien brauchen Hilfe.",
+      "image": "./src/img/kategorien/fluechtlinge_in_asien_brauchen_hilfe.jpg"
+    },
+    {
+      "title": "Mit Ihrer Spende retten Sie Leben in Somaliland, Äthiopien und Südsudan",
+      "image": "./src/img/kategorien/hunger_in_afrika.jpg"
+    }
+  ],
+  "myFavorites": [
+    {
+      "title": "Projekt Schutz vor Epidemien Ghana",
+      "image": "./src/img/stories/8_DSC0427312171_Redcross_Original.jpg",
+      "heart": true,
+      "link": "project"
+    },
+    {
+      "title": "Nothilfe weltweit",
+      "image": "./src/img/kategorien/nothilfe_weltweit.jpg",
+      "heart": true
+    },
+    {
+      "title": "Afrika hat Hunger.",
+      "image": "./src/img/kategorien/hunger_in_afrika.jpg",
+      "heart": true
+    },
+    {
+      "title": "Licht in das Leben der Ärmsten bringen.",
+      "image": "./src/img/kategorien/licht_in_das_leben_der_aermsten_bringen.jpg",
+      "heart": true
+    }
+  ]
 }

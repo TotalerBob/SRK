@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { TileLarge } from "../display/TileLarge";
 
 export class TileRowLarge extends Component {
@@ -24,7 +24,7 @@ export class TileRowLarge extends Component {
                     live: val.live,
                     text: val.title,
                     image: val.image,
-                    link : val.link
+                    link: val.link
                   }}
                 />
               );

@@ -3,7 +3,7 @@ import ProfileImpact from "../display/ProfileImpact";
 import ProfileButton from "../display/ProfileButton";
 import { ProfileProgress } from "../display/ProfileProgress";
 import profileData from "../../data/profile.json";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export class ProfileContainer extends Component {
   constructor() {
@@ -28,27 +28,36 @@ export class ProfileContainer extends Component {
           <div className="profile-scrollmenu">
             <div className="profile-inner-scroll">
               {this.state.data.influence.map(item => (
-                <Link to="/project"><ProfileImpact items={item} /></Link>
+                <Link to="/project">
+                  <ProfileImpact items={item} />
+                </Link>
               ))}
             </div>
           </div>
           <ProfileButton />
 
-          <div className="silver-line"></div>
+          <div className="silver-line" />
 
           <h2>Meine Errungenschaften</h2>
 
           <div className="badges">
-          <div className="profile-badges">
-            <img src="src/img/badges/badges.png" alt=""/>
-          </div>
-          <div className="silver-line"></div>
-          <div className="profile-stats">
-            <div className="line"><div className="name">Insgesamt gespendet:</div> <div className="val">CHF 3'520.-</div></div>
-            <div className="line"><div className="name">Anzahl Projekte gespendet: </div> <div className="val">14</div> </div>
+            <div className="profile-badges">
+              <img src="src/img/badges/badges.png" alt="" />
+            </div>
+            <div className="silver-line" />
+            <div className="profile-stats">
+              <div className="line">
+                <div className="name">Insgesamt gespendet:</div>{" "}
+                <div className="val">CHF 3'520.-</div>
+              </div>
+              <div className="line">
+                <div className="name">Anzahl Projekte gespendet: </div>{" "}
+                <div className="val">14</div>{" "}
+              </div>
+            </div>
           </div>
         </div>
-      </div></div>
+      </div>
     );
   }
 }
