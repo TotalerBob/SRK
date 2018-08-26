@@ -14,7 +14,7 @@ export class ProfileContainer extends Component {
 
   render() {
     return (
-      <div className="content">
+      <div>
         <div className="profile-header">
           <div className="profile-picture">
             <img src="src/img/bobby_avatar.png" alt="Bobby Avatar" />
@@ -33,31 +33,18 @@ export class ProfileContainer extends Component {
           </div>
           <ProfileButton />
 
-          <div class="silver-line"></div>
+          <div className="silver-line"></div>
 
           <h2>Meine Errungenschaften</h2>
 
-          <div class="badges">
-            <div class="badge">
-              <img src="./src/img/badge_1.svg" alt="" />
-              <div class="description">Erste Spende</div>
-            </div>
-            <div class="badge">
-              <img src="./src/img/badge_2.svg" alt="" />
-              <div class="description">In 5 Ländern gespendet</div>
-            </div>
-            <div class="badge">
-              <img src="./src/img/badge_3.svg" alt="" />
-              <div class="description">Für 10 Projekte gespendet</div>
-            </div>
-
-          <div class="profile-badges">
+          <div className="badges">
+          <div className="profile-badges">
             <img src="src/img/badges/badges.png" alt=""/>
           </div>
-          <div class="silver-line"></div>
-          <div class="profile-stats">
-            <div class="line"><div class="name">Insgesamt gespendet:</div> <div class="val">CHF 3'520.-</div></div>
-            <div class="line"><div class="name">Anzahl Projekte gespendet: </div> <div class="val">14</div> </div>
+          <div className="silver-line"></div>
+          <div className="profile-stats">
+            <div className="line"><div className="name">Insgesamt gespendet:</div> <div className="val">CHF 3'520.-</div></div>
+            <div className="line"><div className="name">Anzahl Projekte gespendet: </div> <div className="val">14</div> </div>
           </div>
         </div>
       </div></div>

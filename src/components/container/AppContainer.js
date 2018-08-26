@@ -24,14 +24,14 @@ export default class AppContainer extends Component {
   /* Test */
   render() {
     return (
-      <div className="container">
-        <div className="content-container">
+<div className="container-wrapper">
           <TransitionGroup className="transition-group">
             <CSSTransition
               key={this.props.loc.location.key}
               timeout={{ enter: 300, exit: 300 }}
               classNames="fade"
             >
+
 
                 <Switch location={this.props.loc.location}>
                   <Route exact path="/" component={DashboardContainer} />
@@ -48,8 +48,7 @@ export default class AppContainer extends Component {
        
         <TopBar />
         <NavigationContainer />
-        </div>
-      </div>
+</div>
     );
   }
 }

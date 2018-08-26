@@ -77,12 +77,18 @@ h2 {
 }
 
 /* Content */
+.absolute {
+
+}
+.container-wrapper {
+  padding-top:50px;
+  padding-bottom:140px;
+}
 .content-container {
   position: absolute;
   width: 100vw;
   left: 0;
   top: 60px;
-  margin-bottom: 120px;
 }
 
 .content {
@@ -383,7 +389,6 @@ h2 {
  * START DASHBOARD STYLE ==============================
  */
 .dashboard-wrapper {
-  padding-bottom: 30px;
 }
 
 .row {

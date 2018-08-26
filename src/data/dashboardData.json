@@ -8,7 +8,8 @@
 		{
 			"title" : "Jeder zweite Syrer ist auf der Flucht, etwa die Hälfte der Betroffenen sind Kinder.",
 			"image" : "./src/img/kategorien/fluechtlinge_in_asien_brauchen_hilfe.jpg",
-			"tag" : "STORY"
+			"tag" : "STORY",
+			"link" : "story"
 		},
 		{
 			"title" : "Jeder zweite Syrer ist auf der Flucht, etwa die Hälfte der Betroffenen sind Kinder.",
@@ -19,7 +20,8 @@
 	"projectsAndCategories" : [
 		{
 			"title" : "Hilfe für Familien in der Schweiz.",
-			"image" : "./src/img/kategorien/hilfe_fuer_familien_in_der_schweiz.jpg"
+			"image" : "./src/img/kategorien/hilfe_fuer_familien_in_der_schweiz.jpg",
+			"link" : "category"
 		},
 		{
 			"title" : "Licht in das Leben der Ärmsten bringen.",
@@ -39,7 +41,8 @@
 		{
 			"title" : "Projekt Schutz vor Epidemien Ghana",
 			"image" : "./src/img/stories/8_DSC0427312171_Redcross_Original.jpg",
-			"heart" : true
+			"heart" : true,
+			"link" : "project"
 		},
 		{
 			"title" : "Nothilfe weltweit",

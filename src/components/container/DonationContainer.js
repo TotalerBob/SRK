@@ -43,7 +43,7 @@ export class DonationContainer extends Component {
 
   render() {
     return (
-      <div className="content donate-page indent-container">
+      <div className="donate-page indent-container">
         <div className="payment-settings">
           <input
             id="donation-amount"
@@ -123,7 +123,11 @@ export class DonationContainer extends Component {
             />
           );
         })}
+
+        <div style={{"width":"100px","height":"550px"}}></div>
       </div>
+
+
     );
   }
 }
