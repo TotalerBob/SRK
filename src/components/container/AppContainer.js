@@ -6,6 +6,9 @@ import { NavigationContainer } from "./NavigationContainer";
 import { DashboardContainer } from "./DashboardContainer";
 import { TopBar } from "../display/TopBar";
 import { ProfileContainer } from "./ProfileContainer";
+import { CategoryContainer} from "./CategoryContainer";
+import { StoryContainer } from "./StoryContainer";
+import { ProjectContainer } from "./ProjectContainer";
 
 export default class AppContainer extends Component {
   constructor() {
@@ -23,7 +26,7 @@ export default class AppContainer extends Component {
               classNames="fade"
             >
               <Switch location={location}>
-                <Route exact path="/" component={DashboardContainer} />
+                <Route exact path="/" component={ProjectContainer} />
                 <Route exact path="/donate" component={DonationContainer} />
                 <Route exact path="/profile" component={ProfileContainer} />
               </Switch>

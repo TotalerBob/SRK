@@ -283,11 +283,14 @@ h2 {
   display: inline-block;
   background-size: cover;
   position: relative;
+<<<<<<< HEAD
   box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -webkit-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -ms-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
   -o-box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.85);
+=======
+>>>>>>> 00a15bdb8fc1a73e520af2a6172d6122937a3da9
 }
 
 .donation-option .tile-text {

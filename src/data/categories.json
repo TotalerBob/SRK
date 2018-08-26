@@ -1,0 +1,36 @@
+{
+	"categories" : [
+		{
+			"id" : 0,
+			"title" : "Dort, wo es am nötigsten ist.",
+			"image" : "./src/img/kategorien/fluechtlinge_in_asien_brauchen_hilfe.jpg",
+			"wide" : true,
+			"checked" : true
+		},
+		{
+			"id" : 1,
+			"title" : "Flüchtlinge in Asien brauchen Hilfe.",
+			"image" : "./src/img/kategorien/fluechtlinge_in_asien_brauchen_hilfe.jpg",
+			"small" : true
+		},
+		{
+			"id" : 2,
+			"title" : "Hilfe für Familien in der Schweiz.",
+			"image" : "./src/img/kategorien/hilfe_fuer_familien_in_der_schweiz.jpg",
+			"small" : true
+		},
+		{
+			"id" : 3,
+			"title" : "Afrika hat Hunger.",
+			"image" : "./src/img/kategorien/hunger_in_afrika.jpg",
+			"small" : true
+		},
+		{
+			"id" : 4,
+			"title" : "Licht in das Leben der Ärmsten bringen.",
+			"image" : "./src/img/kategorien/licht_in_das_leben_der_aermsten_bringen.jpg",
+			"small" : true
+		}
+
+	]
+}

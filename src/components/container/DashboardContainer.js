@@ -21,7 +21,7 @@ export class DashboardContainer extends Component {
 
         		<TileRowLarge
         			title="Aktuelle Projekte und Stories"
-        			size="950"
+        			size="915"
         			form="large"
         			json={this.state.projectsAndStories}
         		/>

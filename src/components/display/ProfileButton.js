@@ -5,7 +5,6 @@ class ProfileButton extends React.Component {
     return (
       <button
         className="myDonation-button"
-        onClick = {this.props.handler}
       >
         Alle Spenden
       </button>
