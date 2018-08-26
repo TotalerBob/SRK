@@ -467,6 +467,20 @@ h2 {
   width: 1600px;
 }
 
+.profile-stats {
+ display:flex;
+ flex-flow: column;
+}
+
+.profile-stats .line {
+  display:flex;
+  line-height:150%;
+}
+.profile-stats .name {
+  width:200px;
+  color:grey;
+}
+
 .profile-card {
   margin-right: 10px;
   height: 200px;

@@ -45,6 +45,13 @@ export class ProfileContainer extends Component {
                   </div>
 
                   <div class="silver-line"></div>
+                  
+                  <div class="profile-stats">
+                    <div class="line"><div class="name">Insgesamt gespendet:</div> <div class="val">CHF 3'520.-</div></div>
+                    <div class="line"><div class="name">Anzahl Projekte gespendet: </div> <div class="val">14</div> </div>
+                  </div>
+                  
+
                 </div>
 
           </div>
