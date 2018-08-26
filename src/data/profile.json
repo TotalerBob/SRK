@@ -1,6 +1,6 @@
 {
-    "user": "Robert'); DROP TABLE Students;--",
-    "img": "../../img/profile/bobby.png",
+    "user": "Robert Jones",
+    "img": "../../img/profile/bobby_avatar.png",
     "influence": [
       {
         "projectName": "Projekt 1",
