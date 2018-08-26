@@ -21,7 +21,8 @@ export class TileRow extends Component {
                   data={{
                     text: val.title,
                     image: val.image,
-                    heart: val.heart
+                    heart: val.heart,
+                    link : val.link
                   }}
                 />
               );

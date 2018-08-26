@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {TileLarge} from "../display/TileLarge";
+import { Link } from 'react-router-dom';
 
 export class TileRowLarge extends Component {
   constructor() {
@@ -15,12 +16,13 @@ export class TileRowLarge extends Component {
                 {
                 	this.props.json.map((val, key) => {
                 		return (
-                			<TileLarge
+                      <TileLarge
                 			data={{
                 				tag : val.tag,
                 				live : val.live,
                 				text : val.title,
-                				image : val.image
+                				image : val.image,
+                        link : val.link
                 			}}
                 			/>
                 		)
