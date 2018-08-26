@@ -37,21 +37,14 @@ export class ProfileContainer extends Component {
                   </div>
                   <ProfileButton />
 
+                  <div class="silver-line"></div>
+
                   <h2>Meine Errungenschaften</h2>
-                  <div class="badges">
-                    <div class="badge">
-                      <img src="src/img/badge_1.svg" alt=""/>
-                      <div class="description">Erste Spende</div>
-                    </div>
-                    <div class="badge">
-                      <img src="src/img/badge_2.svg" alt=""/>
-                        <div class="description">In 5 Ländern gespendet</div>
-                    </div>
-                    <div class="badge">
-                      <img src="src/img/badge_3.svg" alt=""/>
-                      <div class="description">Für 10 Projekte gespendet</div>
-                    </div>
+                  <div class="profile-badges">
+                    <img src="src/img/badges/badges.png" alt=""/>
                   </div>
+
+                  <div class="silver-line"></div>
                 </div>
 
           </div>
